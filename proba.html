@@ -3,41 +3,7 @@
 <head>
 <title>Unit Converter</title>
 <style>
-body {
-font-family: Arial, sans-serif;
-margin: 20px;
-}
-
-h1 {
-text-align: center;
-}
-
-table.converter {
-width: 100%;
-margin-bottom: 10px;
-}
-
-table.converter td {
-padding: 5px;
-}
-
-table.converter button {
-padding: 5px 10px;
-background-color: #4CAF50;
-color: white;
-border: none;
-cursor: pointer;
-}
-
-.result {
-font-weight: bold;
-margin-top: 10px;
-}
-
-.error {
-color: red;
-margin-top: 10px;
-}
+/* CSS стили здесь */
 </style>
 </head>
 <body>
@@ -71,148 +37,24 @@ margin-top: 10px;
 <input type="text" id="result" disabled>
 </td>
 </tr>
-<tr>
-<td>
-<input type="number" id="temperatureValue" placeholder="Enter temperature">
-</td>
-<td>
-<select id="temperatureUnit">
-<option value="celsius">Celsius</option>
-<option value="kelvin">Kelvin</option>
-<option value="fahrenheit">Fahrenheit</option>
-</select>
-</td>
-<td>
-<button onclick="convertTemperature()">Convert</button>
-</td>
-<td>
-<select id="temperatureToUnit"> <!— Изменение ID с "celsiusToKelvinUnit" на "temperatureToUnit" —>
-<option value="kelvin">Kelvin</option>
-</select>
-</td>
-<td>
-<input type="text" id="temperatureResult" disabled>
-</td>
-</tr>
 </table>
 
-<div id="error" class="error"></div>
-
+<!-- Добавлено скриптовое содержимое -->
 <script>
-function convert() {
-var inputValue = parseFloat(document.getElementById("inputValue").value);
-var fromUnit = document.getElementById("fromUnit").value.toLowerCase();
-var toUnit = document.getElementById("toUnit").value.toLowerCase();
-var result = 0;
-var errorDiv = document.getElementById("error");
+// Функция инициализации конвертера
+function initConverter() {
+  // Инициализация значений по умолчанию
+  document.getElementById("inputValue").value = "";
+  document.getElementById("fromUnit").value = "cm";
+  document.getElementById("toUnit").value = "cm";
+  document.getElementById("result").value = "";
 
-// Проверка на недопустимые значения
-if (isNaN(inputValue)) {
-errorDiv.textContent = "Введите числовое значение.";
-document.getElementById("result").value = "";
-return;
+  // Удаление сообщений об ошибках
+  document.getElementById("error").textContent = "";
 }
 
-if (inputValue < 0) {
-errorDiv.textContent = "Значение должно быть положительным.";
-document.getElementById("result").value = "";
-return;
-}
-
-// Сброс сообщений об ошибках
-errorDiv.textContent = "";
-function convertTemperature() {
-var temperatureValue = parseFloat(document.getElementById("temperatureValue").value);
-var temperatureUnit = document.getElementById("temperatureUnit").value.toLowerCase();
-var temperatureToUnit = document.getElementById("temperatureToUnit").value.toLowerCase();
-var temperatureResult = 0;
-var temperatureErrorDiv = document.getElementById("temperatureError"); // Добавлено получение элемента с ID "temperatureError"
-
-// Проверка на недопустимые значения
-if (isNaN(temperatureValue)) {
-temperatureErrorDiv.textContent = "Введите числовое значение.";
-document.getElementById("temperatureResult").value = "";
-return;
-}
-
-// Сброс сообщений об ошибках
-temperatureErrorDiv.textContent = "";
-
-// Выполнение конвертации
-switch (temperatureUnit) {
-case "celsius":
-switch (temperatureToUnit) {
-case "kelvin":
-temperatureResult = celsiusToKelvin(temperatureValue);
-break;
-default:
-temperatureResult = temperatureValue; // Единицы измерения совпадают
-break;
-}
-break;
-default:
-temperatureResult = temperatureValue; // Единицы измерения совпадают
-break;
-}
-
-document.getElementById("temperatureResult").value = temperatureResult.toFixed(2);
-}
-// Выполнение конвертации
-switch (fromUnit) {
-case "cm":
-result = cmToInch(inputValue);
-break;
-case "inch":
-result = inchToCm(inputValue);
-break;case "m":
-result = metersToCm(inputValue);
-break;
-case "celsius":
-switch (toUnit) {
-case "kelvin":
-result = celsiusToKelvin(inputValue);
-break;
-default:
-result = inputValue; // Единицы измерения совпадают
-break;
-}
-break;
-default:
-result = inputValue; // Единицы измерения совпадают
-break;
-}
-
-document.getElementById("result").value = result.toFixed(2);
-}
-
-// Функции конвертации
-function cmToInch(cm) {
-return cm / 2.54;
-}
-
-function cmToMeters(cm) {
-return cm / 100;
-}
-
-function inchToCm(inch) {
-return inch * 2.54;
-}
-
-function inchToMeters(inch) {
-return inch * 0.0254;
-}
-
-function metersToCm(meters) {
-return meters * 100;
-}
-
-function metersToInch(meters) {
-return meters / 0.0254;
-}
-
-function celsiusToKelvin(celsius) {
-return celsius + 273.15;
-}
+// Вызов функции инициализации при загрузке страницы
+window.onload = initConverter;
 </script>
 </body>
 </html>
