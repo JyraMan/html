@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Unit Converter</title>
-<style>
-/* CSS стили здесь */
-</style>
+    <title>Unit Converter</title>
+    <script>
+        function convertUnits() {
+            // Получаем значения из полей ввода
+            var input = document.getElementById("inputValue").value;
+            var inputUnit = document.getElementById("inputUnit").value;
+            var outputUnit = document.getElementById("outputUnit").value;
+            
+            // Выполняем конвертацию
+            var convertedValue;
+            if (inputUnit === "meters" && outputUnit === "feet") {
+                convertedValue = input * 3.281;
+            } else if (inputUnit === "feet" && outputUnit === "meters") {
+                convertedValue = input / 3.281;
+            } else if (inputUnit === "kilograms" && outputUnit === "pounds") {
+                convertedValue = input * 2.205;
+            } else if (inputUnit === "pounds" && outputUnit === "kilograms") {
+                convertedValue = input / 2.205;
+            } else {
+                convertedValue = "Cannot convert between the selected units.";
+            }
+            
+            // Выводим результат
+            document.getElementById("outputValue").innerHTML = convertedValue;
+        }
+    </script>
 </head>
 <body>
-<h1>Unit Converter</h1>
-
-<table class="converter">
-<tr>
-<td>
-<input type="number" id="inputValue" placeholder="Enter value">
-</td>
-<td>
-<select id="fromUnit">
-<option value="cm">cm</option>
-<option value="inch">inch</option>
-<option value="m">m</option>
-<option value="celsius">Celsius</option>
-</select>
-</td>
-<td>
-<button onclick="convert()">Convert</button>
-</td>
-<td>
-<select id="toUnit">
-<option value="cm">cm</option>
-<option value="inch">inch</option>
-<option value="m">m</option>
-<option value="kelvin">Kelvin</option>
-</select>
-</td>
-<td>
-<input type="text" id="result" disabled>
-</td>
-</tr>
-</table>
-
-<!-- Добавлено скриптовое содержимое -->
-<script>
-// Функция инициализации конвертера
-function initConverter() {
-  // Инициализация значений по умолчанию
-  document.getElementById("inputValue").value = "";
-  document.getElementById("fromUnit").value = "cm";
-  document.getElementById("toUnit").value = "cm";
-  document.getElementById("result").value = "";
-
-  // Удаление сообщений об ошибках
-  document.getElementById("error").textContent = "";
-}
-
-// Вызов функции инициализации при загрузке страницы
-window.onload = initConverter;
-</script>
+    <h1>Unit Converter</h1>
+    
+    <label for="inputValue">Input Value:</label>
+    <input type="number" id="inputValue">
+    
+    <label for="inputUnit">Input Unit:</label>
+    <select id="inputUnit">
+        <option value="meters">Meters</option>
+        <option value="feet">Feet</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="pounds">Pounds</option>
+    </select>
+    
+    <label for="outputUnit">Output Unit:</label>
+    <select id="outputUnit">
+        <option value="meters">Meters</option>
+        <option value="feet">Feet</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="pounds">Pounds</option>
+    </select>
+    
+    <button onclick="convertUnits()">Convert</button>
+    
+    <h2>Output Value:</h2>
+    <div id="outputValue"></div>
 </body>
 </html>
