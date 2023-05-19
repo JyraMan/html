@@ -16,6 +16,10 @@
         printf("| Your answer is: %.2f meters is equal to %.2f centimeters. \n", value, value * 100);
         printf("+-----------------------------------------------------------+\n");
         break;
+        case 'c':
+        printf("\n\n");
+        printf("| Your answer is: %.2f centimeters is equal to %.2le kilometers. ", value, value / 100000);
+        break;
         // Добавить здесь другие варианты конвертации длины потом
         default:
         printf("| Invalid choice. |\n");
