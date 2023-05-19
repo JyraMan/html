@@ -18,7 +18,9 @@
         break;
         case 'c':
         printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
         printf("| Your answer is: %.2f centimeters is equal to %.2le kilometers. ", value, value / 100000);
+        printf("+-----------------------------------------------------------+\n");
         break;
         // Добавить здесь другие варианты конвертации длины потом
         default:
@@ -94,6 +96,8 @@ switch (category) {
     printf("| a) |            | CM to M |\n");
     printf("+---------------------------+\n");
     printf("| b) |            | M to CM |\n");
+    printf("+---------------------------+\n");
+    printf("| c) |           | CM to KM | ");
     printf("+---------------------------+\n");
     printf("| Enter a choise:|         ");
     scanf(" %c", &choice);
