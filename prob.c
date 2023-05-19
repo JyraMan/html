@@ -16,7 +16,7 @@
         printf("| Your answer is: %.2f meters is equal to %.2f centimeters. \n", value, value * 100);
         printf("+-----------------------------------------------------------+\n");
         break;
-        // Добавить здесь другие варианты конвертации длины потом
+        //Добавить здесь другие варианты конвертации длины потом
         default:
         printf("| Invalid choice. |\n");
         break;
