@@ -38,6 +38,12 @@
         printf(" | Your answer is: %.2f Fahrenheit is equal to %.2f Celsius. \n", value, (value - 32) * 5 / 9);
         printf("+------------------------------------------------------------+\n");
         break;
+        case 'c':
+         printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Celsius is equal to %.2f Kelvins. \n", value, value + 273);
+        printf("+-----------------------------------------------------------+\n");
+        printf("\n\n");
+
         // Добавить здесь другие варианты конвертации температуры потом
         default:
         printf("Invalid choice.\n");
@@ -103,6 +109,8 @@ case 'b':
     printf("| a) |            | C to F  |\n");
     printf("+---------------------------+\n");
     printf("| b) |            | F to C  |\n");
+    printf("+---------------------------+\n");
+    printf("| c) |            | C to F  |\n");
     printf("+---------------------------+\n");
     printf("| Enter a choise:|         ");
 scanf(" %c", &choice);
