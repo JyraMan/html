@@ -2,7 +2,7 @@
       #include <string.h>
 
 //         // Функции для конвертации длины
-        void convertLength(float value, char choise) {
+        void convertSM(float value, char choise) {
         switch (choise) {
         case 'a':
 
@@ -161,11 +161,9 @@ float value;
 char units[3];
 char choice;
 scanf("%f", &value);
-scanf(" %s ", &units);
+scanf("%2s", &units);
 if (strcmp(units, "cm") == 0) {
-    int i = 1;
-    while(i = 1) 
-    {
+    
     printf("|    Choose conversion:     |\n");
     printf("+---------------------------+\n");
     printf("| Option |     | Conversion |\n");
@@ -183,10 +181,9 @@ if (strcmp(units, "cm") == 0) {
     printf("| Enter a choise:|         ");
     scanf(" %c", &choice);
     printf("+---------------------------+\n");
-    convertLength(value, choice);
+    convertSM(value, choice);
     // printf("\n\n");
-    i--;
-    }
+    
 }
     else {
 printf("+---------------------------+\n");
