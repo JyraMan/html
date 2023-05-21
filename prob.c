@@ -289,6 +289,47 @@
                 break;
                 }
                 }
+                //функция для СЕКУНД
+                void convertSEC(float value, char choice) {
+                    switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Seconds is equal to %.2f Minutes. \n", value, value / 60);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'b':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Seconds is equal to %.2f Hours. \n", value, value / 3600);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'c':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Seconds is equal to %.2f Days. \n", value, value * 86400);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'd':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Seconds is equal to %.2f Months. \n", value, value / 2.628e+6);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'e':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Seconds is equal to %.2f Years. \n", value, value / 3.154e+7);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+
+
+                    default:
+                printf("| Invalid choice. |\n");
+                break;
+
+                    }
+                }
 
 
     int main() {
@@ -516,8 +557,40 @@
                 printf("| d) |            | HW to PD  |\n");
                 printf("+---------------------------+\n");
 
-            }
 
+                printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertHW(value, choice);
+            isValidUnit = 1;
+
+            }
+            //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ СЕКУНДЫ)
+            else if(strcmp(units, "sec"))
+            {
+                printf("|    Choose conversion:     |\n");
+                printf("+---------------------------+\n");
+                printf("| a) |           | SEC to MIN   |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |           | SEC to HOUR  |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |           | SEC to DAYS  |\n");
+                printf("+---------------------------+\n");
+                printf("| d) |           | SEC to MONTH  |\n");
+                printf("+---------------------------+\n");
+                printf("| e) |           | SEC to YEAR  |\n");
+                printf("+---------------------------+\n");
+
+
+            printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertSEC(value, choice);
+            isValidUnit = 1;
+
+            }
                 
             else {  
                 printf("+---------------------------+\n");
@@ -525,6 +598,9 @@
                 printf("+---------------------------+\n");
         isValidUnit = 1;
     }
+
+        
+
         
         
     }
