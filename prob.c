@@ -154,7 +154,7 @@
                 printf("+-----------------------------------------------------------+\n");
                 printf(" | Your answer is: %.2f Kilograms is equal to %.2f Pounds. \n", value, value * 2.205);
                 printf("+-----------------------------------------------------------+\n");
-
+                    break;
 
                     default:
         printf("| Invalid choice. |\n");
