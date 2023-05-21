@@ -74,7 +74,49 @@
         break;
         }
     }
+            //функция для конвертации ЦЕЛЬСИЯ
+            void convertC(float value, char choice) {
+        switch (choice) {
+        case 'a':
+        printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Celsius is equal to %.2f Fahrenheit. \n", value, (value * 9 / 5) + 32);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'b':
+        printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Celsius is equal to %.2f Kelvins. \n", value, value + 273);
+        printf("+-----------------------------------------------------------+\n");
+        break;
 
+        default:
+        printf("| Invalid choice. |\n");
+        break;
+        } 
+            }
+            //функция для конвертации КЕЛЬВИНЫ 
+            void convertK(float value, char choise) {
+                switch (choise) {
+                    case 'a': 
+        printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f kelvin is equal to %.2f Fahrenheit. \n", value, 1.8 * (value - 273) + 32);
+        printf("+-----------------------------------------------------------+\n");
+        break;  
+        case 'b':
+        printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f kelvin is equal to %.2f Celsius. \n", value,  value - 273);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+
+
+        default:
+        printf("| Invalid choice. |\n");
+        break;
+            }
+            }
 
 
     int main() {
@@ -158,6 +200,45 @@
         printf("\n\n");
         isValidUnit = 1;
     } 
+        //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ ЦЕЛЬСИЯ)
+        else if(strcmp(units, "c") == 0) 
+        {
+            printf("|    Choose conversion:     |\n");
+            printf("+---------------------------+\n");
+            printf("| a) |            | C to F  |\n");
+            printf("+---------------------------+\n");
+            printf("| b) |            | C to K  |\n");
+            printf("+---------------------------+\n"); 
+
+
+            printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertC(value, choice);
+            isValidUnit = 1;
+        
+        }
+        //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ КЕЛЬВИНЫ)
+         else if(strcmp(units, "k") == 0) 
+         {
+            printf("|    Choose conversion:     |\n");
+            printf("+---------------------------+\n");
+            printf("| a) |            | K to F  |\n");
+            printf("+---------------------------+\n");
+            printf("| b) |            | K to C  |\n");
+            printf("+---------------------------+\n"); 
+
+
+            printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertK(value, choice);
+            isValidUnit = 1;
+
+         }
+
             else {  
                 printf("+---------------------------+\n");
                 printf("|      Invalid category.    |\n");
