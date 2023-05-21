@@ -166,6 +166,11 @@
                 printf(" | Your answer is: %.2f Kilograms is equal to %.2f Carrats. \n", value, value * 5000);
                 printf("+-----------------------------------------------------------+\n");
                     break;
+                    case 'e': printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Kilograms is equal to %.2f Tonns. \n", value, value / 1000);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
 
 
                     default:
@@ -173,6 +178,46 @@
         break;
                 }
             }
+                //функция для ГРАММОВ
+                void convertGR(float value, char choice) 
+                {
+                    switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Grams is equal to %.2f Kilograms. \n", value, value / 1000);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'b':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Grams is equal to %.2f Miligrams. \n", value, value * 1000);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'c':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Grams is equal to %.2f Pounds. \n", value, value / 453.6);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'd': printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Grams is equal to %.2f Carrats. \n", value, value * 5);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'e': printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Grams is equal to %.2f Tonns. \n", value, value / 1e+6);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+
+
+                    default:
+                printf("| Invalid choice. |\n");
+                break;
+
+                }
+                }
 
 
     int main() {
@@ -326,7 +371,8 @@
             printf("+---------------------------+\n");
             printf("| d) |            | KG to CR  |\n");
             printf("+---------------------------+\n");
-
+            printf("| e) |            | KG to TN  |\n");
+            printf("+---------------------------+\n");
 
 
             printf("+---------------------------+\n");
@@ -338,6 +384,31 @@
 
              }
 
+             //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ ГРАММЫ)
+                else if(strcmp(units, "gr") == 0) {
+                printf("|    Choose conversion:     |\n");
+                printf("+---------------------------+\n");
+                printf("| a) |            | GR to KG  |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |            | GR to MG  |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |            | GR to PD  |\n");
+                printf("+---------------------------+\n");
+                printf("| d) |            | GR to CR  |\n");
+                printf("+---------------------------+\n");
+                printf("| e) |            | GR to TN  |\n");
+            printf("+---------------------------+\n");
+
+                
+                printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertGR(value, choice);
+            isValidUnit = 1;
+
+
+                }
             else {  
                 printf("+---------------------------+\n");
                 printf("|      Invalid category.    |\n");
