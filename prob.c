@@ -57,7 +57,14 @@
         case 'c':
         {
             printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f meters is equal to %.2f centimeters. \n", value, value * 100);
+        printf("| Your answer is: %.2f meters is equal to %.2f miles. \n", value, value / 1069);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        }
+        case 'd':
+        {
+            printf("+-----------------------------------------------------------+\n");
+        printf("| Your answer is: %.2f meters is equal to %.2f foot. \n", value, value * 3.281);
         printf("+-----------------------------------------------------------+\n");
         break;
         }
@@ -90,7 +97,7 @@
         printf("+---------------------------+\n");
         printf("\n\n");
         printf("+---------------------------+\n");
-        printf("| Enter a your unit:|     ");
+        printf("| Enter a unit:|     ");
         scanf("%2s", units);
         printf("+---------------------------+\n");
         printf("\n\n");
@@ -116,7 +123,8 @@
         printf("| d) |           | CM to DC |\n");
         printf("+---------------------------+\n");
 
-
+        printf("\n\n");
+        printf("+---------------------------+\n");
         printf("| Enter a choise:|         ");
         scanf(" %c", &choice);
         printf("+---------------------------+\n");
@@ -137,7 +145,12 @@
         printf("+---------------------------+\n");
         printf("| b) |            | M to KM |\n");
         printf("+---------------------------+\n");
-
+        printf("| c) |            | M to Ml |\n");
+        printf("+---------------------------+\n");
+        printf("| d) |            | M to Ft |\n");
+        printf("+---------------------------+\n");
+        printf("\n\n");
+        printf("+---------------------------+\n");
         printf("| Enter a choise:|         ");
         scanf(" %c", &choice);
         printf("+---------------------------+\n");
