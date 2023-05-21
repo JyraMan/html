@@ -74,6 +74,41 @@
         break;
         }
     }
+            //функция для конвертации МИЛЛИМЕТРОВ
+            void convertMM(float value, char choice) {
+                switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Centimeters. \n", value, value / 10);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+         case 'b':
+                    printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Meters. \n", value, value / 1000);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+         case 'c':
+                    printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Kilometers. \n", value, value * 1e+6);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+         case 'd':
+                    printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Pouns. \n", value, value / 304.8);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        
+
+        default:
+        printf("| Invalid choice. |\n");
+        break;
+                }
+            }
+    
             //функция для конвертации ЦЕЛЬСИЯ
             void convertC(float value, char choice) {
         switch (choice) {
@@ -218,6 +253,42 @@
 
                 }
                 }
+                //функция для ЦЕНТНЕРОВ
+                void convertHW(float value, char choice)
+                {
+                    switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hundredweight is equal to %.2f Grams. \n", value, value / 100000);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'b':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hundredweight is equal to %.2f Kilograms. \n", value, value / 100);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'c':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hundredweight is equal to %.2f Tons. \n", value, value / 10);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'd':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hundredweight is equal to %.2f Pounds. \n", value, value * 220.5);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+
+
+
+                    default:
+                printf("| Invalid choice. |\n");
+                break;
+                }
+                }
 
 
     int main() {
@@ -301,6 +372,29 @@
         printf("\n\n");
         isValidUnit = 1;
     } 
+        //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ МИЛЛИМЕТРЫ)
+        else if(strcmp(units, "mm") == 0) 
+        {
+            printf("|    Choose conversion:     |\n");
+            printf("+---------------------------+\n");
+            printf("| a) |            | MM to CM  |\n");
+            printf("+---------------------------+\n");
+            printf("| b) |            | MM to M  |\n");
+            printf("+---------------------------+\n"); 
+            printf("| c) |            | MM to KM  |\n");
+            printf("+---------------------------+\n");
+            printf("| d) |            | MM to PD  |\n");
+            printf("+---------------------------+\n");
+
+
+            printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertMM(value, choice);
+            isValidUnit = 1;
+        
+        }
         //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ ЦЕЛЬСИЯ)
         else if(strcmp(units, "c") == 0) 
         {
@@ -397,7 +491,7 @@
                 printf("| d) |            | GR to CR  |\n");
                 printf("+---------------------------+\n");
                 printf("| e) |            | GR to TN  |\n");
-            printf("+---------------------------+\n");
+                printf("+---------------------------+\n");
 
                 
                 printf("+---------------------------+\n");
@@ -406,9 +500,25 @@
             printf("+---------------------------+\n");
             convertGR(value, choice);
             isValidUnit = 1;
-
-
                 }
+
+                //определяем, какую единицу измеерения ввеели с клавиатуры ( В ДАННОМ СЛУЧАЕ ЦЕНТНЕРЫ)
+            else if(strcmp(units, "hw"))
+            {
+                printf("|    Choose conversion:     |\n");
+                printf("+---------------------------+\n");
+                printf("| a) |            | HW to GR  |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |            | HW to RG  |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |            | HW to TN  |\n");
+                printf("+---------------------------+\n");
+                printf("| d) |            | HW to PD  |\n");
+                printf("+---------------------------+\n");
+
+            }
+
+                
             else {  
                 printf("+---------------------------+\n");
                 printf("|      Invalid category.    |\n");
