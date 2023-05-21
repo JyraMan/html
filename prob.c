@@ -134,8 +134,34 @@
         break;
 
 
+        default:
+        printf("| Invalid choice. |\n");
+        break;
+         }
+            }
+
+            void convertKG(float value, char choise)
+            {
+                switch (choise) {
+                    case 'a': 
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Kilograms is equal to %.2f Grams. \n", value, value * 1000);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'b':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Kilograms is equal to %.2f Pounds. \n", value, value * 2.205);
+                printf("+-----------------------------------------------------------+\n");
+
+
+                    default:
+        printf("| Invalid choice. |\n");
+        break;
                 }
             }
+
 
     int main() {
         float value;
@@ -276,7 +302,25 @@
             isValidUnit = 1;
 
             }
+         //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ КИЛОГРАММЫ)
+             else if(strcmp(units, "kg") == 0) {
+                printf("|    Choose conversion:     |\n");
+            printf("+---------------------------+\n");
+            printf("| a) |            | KG to GR  |\n");
+            printf("+---------------------------+\n");
+            printf("| b) |            | KG to PD  |\n");
+            printf("+---------------------------+\n");
 
+
+
+            printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertKG(value, choice);
+            isValidUnit = 1;
+
+             }
 
             else {  
                 printf("+---------------------------+\n");
