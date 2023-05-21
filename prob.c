@@ -118,6 +118,24 @@
             }
             }
 
+            //функция для ФАРЕНГЕЙТ
+            void convertF(float value, char choise) {
+                switch (choise) {
+                    case 'a':
+                    printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Fahrenheit is equal to %.2f Kelvin. \n", value, (5.0/9.0) * (value - 32) + 273.15);
+        printf("+-----------------------------------------------------------+\n");
+        break; 
+            case 'b':
+            printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Fahrenheit is equal to %.2f Celsius. \n", value, (value - 32) * (5.0/9.0));
+        printf("+-----------------------------------------------------------+\n");
+        break;
+
+
+                }
+            }
 
     int main() {
         float value;
@@ -238,6 +256,27 @@
             isValidUnit = 1;
 
          }
+
+         //орпеделяем, какую еединцу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ ФАРЕНГЕЙТЫ)
+            else if(strcmp(units, "f") == 0) {
+                printf("|    Choose conversion:     |\n");
+            printf("+---------------------------+\n");
+            printf("| a) |            | F to K  |\n");
+            printf("+---------------------------+\n");
+            printf("| b) |            | F to C  |\n");
+            printf("+---------------------------+\n");
+
+
+
+            printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertF(value, choice);
+            isValidUnit = 1;
+
+            }
+
 
             else {  
                 printf("+---------------------------+\n");
