@@ -139,7 +139,7 @@
         break;
          }
             }
-
+            //функция для КИЛОГРАММОВ
             void convertKG(float value, char choise)
             {
                 switch (choise) {
@@ -155,6 +155,18 @@
                 printf(" | Your answer is: %.2f Kilograms is equal to %.2f Pounds. \n", value, value * 2.205);
                 printf("+-----------------------------------------------------------+\n");
                     break;
+                    case 'c':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Kilograms is equal to %.2f Miligrams. \n", value, value * 1e+6);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'd': printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Kilograms is equal to %.2f Carrats. \n", value, value * 5000);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+
 
                     default:
         printf("| Invalid choice. |\n");
@@ -309,6 +321,10 @@
             printf("| a) |            | KG to GR  |\n");
             printf("+---------------------------+\n");
             printf("| b) |            | KG to PD  |\n");
+            printf("+---------------------------+\n");
+            printf("| c) |            | KG to MG  |\n");
+            printf("+---------------------------+\n");
+            printf("| d) |            | KG to CR  |\n");
             printf("+---------------------------+\n");
 
 
