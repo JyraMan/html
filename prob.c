@@ -481,6 +481,42 @@
                 break;
                      }
                 }
+                 
+                 //функция для конвертации года
+                 void convertYEAR(float value, char choice) {
+                     switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Years is equal to %f Seconds. \n", value, value *  3.154e+7);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'b':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Years is equal to %.2f Minutes. \n", value, value * 525600);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'c':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Years is equal to %.2f Hours. \n", value, value * 8760);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                case 'd':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Years is equal to %.2f Days. \n", value, value * 365);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'e':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Years is equal to %.2f Months. \n", value, value * 12);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+
+                    default:
+                printf("| Invalid choice. |\n");
+                break;
+                     }
+                }
 
     int main() {
         float value;
@@ -749,13 +785,13 @@
                 printf("+---------------------------+\n");
                 printf("| a) |           | MIN to SEC   |\n");
                 printf("+---------------------------+\n");
-                printf("| b) |           | MIN to HOURS  |\n");
+                printf("| b) |           | MIN to HOURS |\n");
                 printf("+---------------------------+\n");
                 printf("| c) |           | MIN to DAYS  |\n");
                 printf("+---------------------------+\n");
-                printf("| d) |           | MIN to MONTHS  |\n");
+                printf("| d) |           | MIN to MONTHS |\n");
                 printf("+---------------------------+\n");
-                printf("| e) |           | MIN to YEARS  |\n");
+                printf("| e) |           | MIN to YEARS |\n");
                 printf("+---------------------------+\n");
 
 
@@ -771,15 +807,15 @@
             {
                 printf("|    Choose conversion:     |\n");
                 printf("+---------------------------+\n");
-                printf("| a) |           | HOURS to SEC   |\n");
+                printf("| a) |           | HOURS to SEC  |\n");
                 printf("+---------------------------+\n");
                 printf("| b) |           | HOURS to MIN  |\n");
                 printf("+---------------------------+\n");
-                printf("| c) |           | HOURS to DAYS  |\n");
+                printf("| c) |           | HOURS to DAYS |\n");
                 printf("+---------------------------+\n");
-                printf("| d) |           | HOURS to MONTHS  |\n");
+                printf("| d) |           | HOURS to MONTHS |\n");
                 printf("+---------------------------+\n");
-                printf("| e) |           | HOURS to YEARS  |\n");
+                printf("| e) |           | HOURS to YEARS |\n");
                 printf("+---------------------------+\n");
 
                 printf("+---------------------------+\n");
@@ -795,15 +831,15 @@
             {
                 printf("|    Choose conversion:     |\n");
                 printf("+---------------------------+\n");
-                printf("| a) |           | DAYS to SEC   |\n");
+                printf("| a) |           | DAYS to SEC  |\n");
                 printf("+---------------------------+\n");
                 printf("| b) |           | DAYS to MIN  |\n");
                 printf("+---------------------------+\n");
                 printf("| c) |           | DAYS to HOURS  |\n");
                 printf("+---------------------------+\n");
-                printf("| d) |           | DAYS to MONTHS  |\n");
+                printf("| d) |           | DAYS to MONTHS |\n");
                 printf("+---------------------------+\n");
-                printf("| e) |           | DAYS to YEARS  |\n");
+                printf("| e) |           | DAYS to YEARS |\n");
                 printf("+---------------------------+\n");
                 
                 printf("+---------------------------+\n");
@@ -818,15 +854,15 @@
             {
                 printf("|    Choose conversion:     |\n");
                 printf("+---------------------------+\n");
-                printf("| a) |           | MONTHS to SEC   |\n");
+                printf("| a) |           | MONTHS to SEC  |\n");
                 printf("+---------------------------+\n");
                 printf("| b) |           | MONTHS to MIN  |\n");
                 printf("+---------------------------+\n");
-                printf("| c) |           | MONTHS to HOURS  |\n");
+                printf("| c) |           | MONTHS to HOURS |\n");
                 printf("+---------------------------+\n");
                 printf("| c) |           | MONTHS to DAYS  |\n");
                 printf("+---------------------------+\n");
-                printf("| e) |           | MONTHS to YEARS  |\n");
+                printf("| e) |           | MONTHS to YEARS |\n");
                 printf("+---------------------------+\n");
                 
                 printf("+---------------------------+\n");
@@ -834,6 +870,29 @@
             scanf(" %c", &choice);
             printf("+---------------------------+\n");
             convertMONTH(value, choice);
+            isValidUnit = 1;
+            }
+                //определяем с клавиатуры, какую единицу измерения ввели (в данном случае года)
+                else if(strcmp(units, "year") == 0)
+            {
+                printf("|    Choose conversion:     |\n");
+                printf("+---------------------------+\n");
+                printf("| a) |           | YEARS to SEC  |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |           | YEARS to MIN  |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |           | YEARS to HOURS |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |           | YEARS to DAYS  |\n");
+                printf("+---------------------------+\n");
+                printf("| e) |           | YEARS to MONTHS |\n");
+                printf("+---------------------------+\n");
+                
+                printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertYEAR(value, choice);
             isValidUnit = 1;
             }
             else {  
