@@ -372,7 +372,7 @@
         case 'd':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Hours is equal to %.3f Months. \n", value, value / 730,008);
+        printf(" | Your answer is: %.2f Hours is equal to %.3f Months. \n", value, value / 730);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'e':
@@ -444,7 +444,7 @@
         break;
         case 'c':
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Months is equal to %.4f Hours. \n", value, value * 730,008);
+        printf(" | Your answer is: %.2f Months is equal to %.4f Hours. \n", value, value * 730);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'd':
