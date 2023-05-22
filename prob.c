@@ -92,7 +92,7 @@
          case 'c':
                     printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Kilometers. \n", value, value * 1e+6);
+        printf(" | Your answer is: %f Millimeters is equal to %f Kilometers. \n", value, value / 1e+6);
         printf("+-----------------------------------------------------------+\n");
         break;
          case 'd':
@@ -289,6 +289,8 @@
                 break;
                 }
                 }
+
+
                 //функция для СЕКУНД
                 void convertSEC(float value, char choice) {
                     switch(choice) {
@@ -313,13 +315,13 @@
                     case 'd':
                     printf("\n\n");
                 printf("+-----------------------------------------------------------+\n");
-                printf(" | Your answer is: %.2f Seconds is equal to %.2f Months. \n", value, value / 2.628e+6);
+                printf(" | Your answer is: %.2f Seconds is equal to %f Months. \n", value, value / 2.628e+6);
                 printf("+-----------------------------------------------------------+\n");
                     break;
                     case 'e':
                     printf("\n\n");
                 printf("+-----------------------------------------------------------+\n");
-                printf(" | Your answer is: %.2f Seconds is equal to %.2f Years. \n", value, value / 3.154e+7);
+                printf(" | Your answer is: %.2f Seconds is equal to %f Years. \n", value, value / 3.154e+7);
                 printf("+-----------------------------------------------------------+\n");
                     break;
 
@@ -331,10 +333,158 @@
                     }
                 }
 
+                //функция ддля конвертации минут
+                void convertMIN(float value, char choice){
+
+                     switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Minutes is equal to %.2f Seconds. \n", value, value * 60);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'b':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Minutes is equal to %.2f Hour. \n", value, value / 60);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'c':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Minutes is equal to %.2f Days. \n", value, value * 1440);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'd':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Minutes is equal to %.2f Months. \n", value, value * 43800);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'e':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Minutes is equal to %.2f Years. \n", value, value * 525600);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+
+                    default:
+                printf("| Invalid choice. |\n");
+                break;
+                } }
+
+                //функция для конвертации ЧАСОВ
+                void convertHOUR(float value, char choice) 
+                {
+                     switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hours is equal to %.2f Seconds. \n", value, value * 3600);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'b':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hours is equal to %.2f Minutes. \n", value, value * 60);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'c':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hours is equal to %.2f Days. \n", value, value / 24);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                case 'd':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hours is equal to %.2f Months. \n", value, value / 730);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'e':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Hours is equal to %.2f Years. \n", value, value / 8760);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+
+                    default:
+                printf("| Invalid choice. |\n");
+                break;
+                     }
+                }
+
+                //функция для конвертации ДНЕЙ
+                void convertDAY(float value, char choice) {
+                     switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Days is equal to %.2f Seconds. \n", value, value * 86400);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'b':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Days is equal to %.2f Minutes. \n", value, value * 1440);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'c':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Days is equal to %.2f Hours. \n", value, value * 24);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                case 'd':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Days is equal to %.2f Months. \n", value, value / 30.417);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'e':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Days is equal to %.2f Years. \n", value, value / 365);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+
+                    default:
+                printf("| Invalid choice. |\n");
+                break;
+                     }
+                }
+
+                //функция для конвертации МЕСЯЦА
+                 void convertMONTH(float value, char choice) {
+                     switch(choice) {
+                    case 'a':
+                    printf("\n\n");
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Months is equal to %f Seconds. \n", value, value *  2.628e+6);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'b':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Months is equal to %.2f Minutes. \n", value, value * 43800);
+                printf("+-----------------------------------------------------------+\n");
+                break;
+                case 'c':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Months is equal to %.2f Hours. \n", value, value * 730);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                case 'd':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Months is equal to %.2f Days. \n", value, value * 30.417);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+                    case 'e':
+                printf("+-----------------------------------------------------------+\n");
+                printf(" | Your answer is: %.2f Months is equal to %.2f Years. \n", value, value / 12);
+                printf("+-----------------------------------------------------------+\n");
+                    break;
+
+                    default:
+                printf("| Invalid choice. |\n");
+                break;
+                     }
+                }
 
     int main() {
         float value;
-        char units[3];
+        char units[10];
         char choice;
 
         printf("\n\n");
@@ -353,7 +503,7 @@
         printf("\n\n");
         printf("+---------------------------+\n");
         printf("| Enter a unit:|     ");
-        scanf("%2s", units);
+        scanf(" %s", units);
         printf("+---------------------------+\n");
         printf("\n\n");
 
@@ -544,7 +694,7 @@
                 }
 
                 //определяем, какую единицу измеерения ввеели с клавиатуры ( В ДАННОМ СЛУЧАЕ ЦЕНТНЕРЫ)
-            else if(strcmp(units, "hw"))
+            else if(strcmp(units, "hw") == 0)
             {
                 printf("|    Choose conversion:     |\n");
                 printf("+---------------------------+\n");
@@ -567,7 +717,7 @@
 
             }
             //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ СЕКУНДЫ)
-            else if(strcmp(units, "sec"))
+            else if(strcmp(units, "sec") == 0)
             {
                 printf("|    Choose conversion:     |\n");
                 printf("+---------------------------+\n");
@@ -577,7 +727,7 @@
                 printf("+---------------------------+\n");
                 printf("| c) |           | SEC to DAYS  |\n");
                 printf("+---------------------------+\n");
-                printf("| d) |           | SEC to MONTH  |\n");
+                printf("| d) |           | SEC to MONTHS  |\n");
                 printf("+---------------------------+\n");
                 printf("| e) |           | SEC to YEAR  |\n");
                 printf("+---------------------------+\n");
@@ -591,7 +741,101 @@
             isValidUnit = 1;
 
             }
+
+                //определяем, какую единицу измерения ввели  клавиатуры (в данном случае минуты)
+            else if(strcmp(units, "min") == 0)
+            {
+                printf("|    Choose conversion:     |\n");
+                printf("+---------------------------+\n");
+                printf("| a) |           | MIN to SEC   |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |           | MIN to HOURS  |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |           | MIN to DAYS  |\n");
+                printf("+---------------------------+\n");
+                printf("| d) |           | MIN to MONTHS  |\n");
+                printf("+---------------------------+\n");
+                printf("| e) |           | MIN to YEARS  |\n");
+                printf("+---------------------------+\n");
+
+
+                printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertMIN(value, choice);
+            isValidUnit = 1;
+            }
+                //определяем, какую единицу измерения ввели с клавиатуры ( в данном случае часы)
+            else if(strcmp(units, "hour") == 0)
+            {
+                printf("|    Choose conversion:     |\n");
+                printf("+---------------------------+\n");
+                printf("| a) |           | HOURS to SEC   |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |           | HOURS to MIN  |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |           | HOURS to DAYS  |\n");
+                printf("+---------------------------+\n");
+                printf("| d) |           | HOURS to MONTHS  |\n");
+                printf("+---------------------------+\n");
+                printf("| e) |           | HOURS to YEARS  |\n");
+                printf("+---------------------------+\n");
+
+                printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertHOUR(value, choice);
+            isValidUnit = 1;
+            }
+
+            //определяем, какую единицу измерения ввели с клавиатуры (в дданном случае дни)
+            else if(strcmp(units, "day") == 0)
+            {
+                printf("|    Choose conversion:     |\n");
+                printf("+---------------------------+\n");
+                printf("| a) |           | DAYS to SEC   |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |           | DAYS to MIN  |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |           | DAYS to HOURS  |\n");
+                printf("+---------------------------+\n");
+                printf("| d) |           | DAYS to MONTHS  |\n");
+                printf("+---------------------------+\n");
+                printf("| e) |           | DAYS to YEARS  |\n");
+                printf("+---------------------------+\n");
                 
+                printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertDAY(value, choice);
+            isValidUnit = 1;
+            }
+            //определяем, какую единицу измерения ввели с клавиатуры (в данном случае месяца)
+                else if(strcmp(units, "month") == 0)
+            {
+                printf("|    Choose conversion:     |\n");
+                printf("+---------------------------+\n");
+                printf("| a) |           | MONTHS to SEC   |\n");
+                printf("+---------------------------+\n");
+                printf("| b) |           | MONTHS to MIN  |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |           | MONTHS to HOURS  |\n");
+                printf("+---------------------------+\n");
+                printf("| c) |           | MONTHS to DAYS  |\n");
+                printf("+---------------------------+\n");
+                printf("| e) |           | MONTHS to YEARS  |\n");
+                printf("+---------------------------+\n");
+                
+                printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertMONTH(value, choice);
+            isValidUnit = 1;
+            }
             else {  
                 printf("+---------------------------+\n");
                 printf("|      Invalid category.    |\n");
@@ -599,9 +843,6 @@
         isValidUnit = 1;
     }
 
-        
-
-        
         
     }
 
