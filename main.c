@@ -22,7 +22,7 @@ int main() {
         printf("\n\n");
         printf("+---------------------------+\n");
         printf("| Enter a unit:|     ");
-        scanf("%2s", units);
+        scanf("%s", units);
         printf("+---------------------------+\n");
         printf("\n\n");
 
