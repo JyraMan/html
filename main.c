@@ -3,7 +3,7 @@
 #include <string.h>
 int main() {
         float value;
-        char units[3];
+        char units[10];
         char choice;
 
         printf("\n\n");
@@ -225,7 +225,7 @@ int main() {
             isValidUnit = 1;
 	    }
 	    //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ СЕКУНДЫ)
-	    else if(strcmp(units, "se") == 0) {
+	    else if(strcmp(units, "sec") == 0) {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
             printf("| a) |           |SEC to MIN   |\n");
@@ -234,11 +234,9 @@ int main() {
             printf("+---------------------------+\n");
             printf("| c) |           | SEC to DAYS  |\n");
             printf("+---------------------------+\n");
-            printf("| d) |           | SEC to WEEK  |\n");
+	        printf("| d) |           | SEC to MONTH  |\n");
             printf("+---------------------------+\n");
-	    printf("| e) |           | SEC to MONTH  |\n");
-            printf("+---------------------------+\n");
-	    printf("| f) |           | SEC to YEAR  |\n");
+	        printf("| e) |           | SEC to YEAR  |\n");
             printf("+---------------------------+\n");
 
 
@@ -250,7 +248,7 @@ int main() {
             isValidUnit = 1;
 	    }
 	    //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ МИНУТЫ)
-            else if(strcmp(units, "mi") == 0) {
+            else if(strcmp(units, "min") == 0) {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
             printf("| a) |           | MIN to SEC   |\n");
@@ -259,11 +257,9 @@ int main() {
             printf("+---------------------------+\n");
             printf("| c) |           | MIN to DAYS  |\n");
             printf("+---------------------------+\n");
-            printf("| d) |           | MIN to WEEK  |\n");
+	        printf("| d) |           | MIN to MONTH  |\n");
             printf("+---------------------------+\n");
-	    printf("| e) |           | MIN to MONTH  |\n");
-            printf("+---------------------------+\n");
-            printf("| f) |           | MIN to YEAR  |\n");
+            printf("| e) |           | MIN to YEAR  |\n");
             printf("+---------------------------+\n");
 
 
@@ -276,7 +272,7 @@ int main() {
 
             }
 	    //определяем, какую единицу измерения ввели с клавиатуры (В ДАННОМ СЛУЧАЕ ЧАСЫ)
-            else if(strcmp(units, "hr") == 0) {
+            else if(strcmp(units, "hour") == 0) {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
             printf("| a) |           | HOUR to SEC   |\n");
@@ -285,11 +281,9 @@ int main() {
             printf("+---------------------------+\n");
             printf("| c) |           | HOUR to DAYS  |\n");
             printf("+---------------------------+\n");
-            printf("| d) |           | HOUR to WEEK  |\n");
+	        printf("| d) |           | HOUR to MONTH  |\n");
             printf("+---------------------------+\n");
-	    printf("| e) |           | HOUR to MONTH  |\n");
-            printf("+---------------------------+\n");
-            printf("| f) |           | HOUR to YEAR  |\n");
+            printf("| e) |           | HOUR to YEAR  |\n");
             printf("+---------------------------+\n");
 
 
@@ -311,15 +305,9 @@ int main() {
             printf("+---------------------------+\n");
             printf("| c) |           | DAY to HOUR  |\n");
             printf("+---------------------------+\n");
-            printf("| d) |           | DAY to WEEK  |\n");
+            printf("| d) |           | DAY to MONTH  |\n");
             printf("+---------------------------+\n");
-            printf("| e) |           | DAY to MONTH(30d)  |\n");
-            printf("+---------------------------+\n");
-            printf("| f) |           | DAY to MONTH(31d)  |\n");
-            printf("+---------------------------+\n");
-            printf("| g) |           | DAY to MONTH(28d)  |\n");
-            printf("+---------------------------+\n");
-            printf("| h) |           | DAY to YEAR  |\n");
+            printf("| e) |           | DAY to YEAR  |\n");
             printf("+---------------------------+\n");
 
 
@@ -331,7 +319,54 @@ int main() {
             isValidUnit = 1;
 
             }
-	    else {
+	        //определяем, какую единицу измерения ввели с клавиатуры (в данном случае месяца)
+                else if(strcmp(units, "month") == 0)
+            {
+            printf("|    Choose conversion:     |\n");
+            printf("+---------------------------+\n");
+            printf("| a) |           | MONTHS to SEC  |\n");
+            printf("+---------------------------+\n");
+            printf("| b) |           | MONTHS to MIN  |\n");
+            printf("+---------------------------+\n");
+            printf("| c) |           | MONTHS to HOURS |\n");
+            printf("+---------------------------+\n");
+            printf("| c) |           | MONTHS to DAYS  |\n");
+            printf("+---------------------------+\n");
+            printf("| e) |           | MONTHS to YEARS |\n");
+            printf("+---------------------------+\n");
+                
+            printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertMONTH(value, choice);
+            isValidUnit = 1;
+            }
+                //определяем с клавиатуры, какую единицу измерения ввели (в данном случае года)
+                else if(strcmp(units, "year") == 0)
+            {
+            printf("|    Choose conversion:     |\n");
+            printf("+---------------------------+\n");
+            printf("| a) |           | YEARS to SEC  |\n");
+            printf("+---------------------------+\n");
+            printf("| b) |           | YEARS to MIN  |\n");
+            printf("+---------------------------+\n");
+            printf("| c) |           | YEARS to HOURS |\n");
+            printf("+---------------------------+\n");
+            printf("| c) |           | YEARS to DAYS  |\n");
+            printf("+---------------------------+\n");
+            printf("| e) |           | YEARS to MONTHS |\n");
+            printf("+---------------------------+\n");
+                
+            printf("+---------------------------+\n");
+            printf("| Enter a choise:|         ");
+            scanf(" %c", &choice);
+            printf("+---------------------------+\n");
+            convertYEAR(value, choice);
+            isValidUnit = 1;
+            }
+
+        else {
                 printf("+---------------------------+\n");
                 printf("|      Invalid category.    |\n");
                 printf("+---------------------------+\n");
@@ -343,3 +378,4 @@ int main() {
 
 return 0;
 }
+

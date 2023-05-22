@@ -13,3 +13,5 @@ void convertSEC(float value, char choice);
 void convertMIN(float value, char choice);
 void convertHOUR(float value, char choice);
 void convertDAY(float value, char choice);
+void convertMONTH(float value, char choice);
+void convertYEAR(float value, char choice);

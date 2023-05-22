@@ -14,13 +14,12 @@
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
         printf("| Your answer is: %.2f centimeters is equal to %.2f millimeters. \n", value, value * 10);
-        // printf("| Your answer is: %.2f meters is equal to %.2f centimeters. \n", value, value * 100);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'c':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f centimeters is equal to %.2le kilometers. \n", value, value / 100000);
+        printf("| Your answer is: %.2f centimeters is equal to %.5f kilometers. \n", value, value / 100000);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'd':
@@ -45,12 +44,12 @@
 	case 'b':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f meters is equal to %.2f kilometers. \n", value, value / 1000);
+        printf("| Your answer is: %.2f meters is equal to %.3f kilometers. \n", value, value / 1000);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'c':
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f meters is equal to %.2f miles. \n", value, value / 1069);
+        printf("| Your answer is: %.2f meters is equal to %.5f miles. \n", value, value / 1069);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'd':
@@ -289,19 +288,13 @@
         printf(" | Your answer is: %.2f Seconds is equal to %.6f Days. \n", value, value / 86400);
         printf("+-----------------------------------------------------------+\n");
         break;
-	case 'd':
-        printf("\n\n");
-        printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Seconds is equal to %.7f Weeks. \n", value, value / 604800);
-        printf("+-----------------------------------------------------------+\n");
-        break;
-        case 'e':
+        case 'd':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
         printf(" | Your answer is: %.2f Seconds is equal to %.9f Months. \n", value, value / 2592000);
         printf("+-----------------------------------------------------------+\n");
         break;
-        case 'f':
+        case 'e':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
         printf(" | Your answer is: %.2f Seconds is equal to %.10f Years. \n", value, value / 31536000);
@@ -336,19 +329,13 @@
         printf(" | Your answer is: %.2f Minutes is equal to %.4f Days. \n", value, value / 1440);
         printf("+-----------------------------------------------------------+\n");
         break;
-        case 'd':
-        printf("\n\n");
-        printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Minutes is equal to %.6f Weeks. \n", value, value / 10080);
-        printf("+-----------------------------------------------------------+\n");
-        break;
-	case 'e':
+	case 'd':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
         printf(" | Your answer is: %.2f Minutes is equal to %.6f Months. \n", value, value / 43200);
         printf("+-----------------------------------------------------------+\n");
         break;
-	case 'f':
+	case 'e':
 	printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
         printf(" | Your answer is: %.2f Minutes is equal to %.7f Years. \n", value, value /525600 );
@@ -385,16 +372,10 @@
         case 'd':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Hours is equal to %.3f Weeks. \n", value, value / 168);
+        printf(" | Your answer is: %.2f Hours is equal to %.3f Months. \n", value, value / 730,008);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'e':
-        printf("\n\n");
-        printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Hours is equal to %.3f Months. \n", value, value / 720);
-        printf("+-----------------------------------------------------------+\n");
-        break;
-        case 'f':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
         printf(" | Your answer is: %.2f Hours is equal to %.4f Years. \n", value, value / 8760);
@@ -431,22 +412,86 @@
         case 'd':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Days is equal to %.3f Weeks. \n", value, value / 7);
+        printf(" | Your answer is: %.2f Days is equal to %.3f Months. \n", value, value / 30.417);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'e':
-        printf("\n\n");
-        printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Days is equal to %.3f Months. \n", value, value / 30);
-        printf("+-----------------------------------------------------------+\n");
-        break;
-        case 'f':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
         printf(" | Your answer is: %.2f Days is equal to %.4f Years. \n", value, value / 365);
         printf("+-----------------------------------------------------------+\n");
         break;
 
+
+        default:
+        printf("| Invalid choice. |\n");
+        break;
+            }
+            }
+            //функция для конвертации МЕСЯЦА
+            void convertMONTH(float value, char choice) {
+                switch(choice) {
+        case 'a':
+        printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Months is equal to %.7f Seconds. \n", value, value *  2.628e+6);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'b':
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Months is equal to %.6f Minutes. \n", value, value * 43800);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'c':
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Months is equal to %.4f Hours. \n", value, value * 730,008);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'd':
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Months is equal to %.2f Days. \n", value, value * 30.417);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'e':
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Months is equal to %.2f Years. \n", value, value / 12);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+
+        default:
+        printf("| Invalid choice. |\n");
+        break;
+            }
+            }
+            //функция для конвертации года
+            void convertYEAR(float value, char choice) {
+                switch(choice) {
+        case 'a':
+        printf("\n\n");
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Years is equal to %.8f Seconds. \n", value, value *  3.154e+7);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'b':
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Years is equal to %.7f Minutes. \n", value, value * 525600);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'c':
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Years is equal to %.4f Hours. \n", value, value * 8760);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'd':
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Years is equal to %.3f Days. \n", value, value * 365);
+        printf("+-----------------------------------------------------------+\n");
+        break;
+        case 'e':
+        printf("+-----------------------------------------------------------+\n");
+        printf(" | Your answer is: %.2f Years is equal to %.2f Months. \n", value, value * 12);
+        printf("+-----------------------------------------------------------+\n");
+        break;
 
         default:
         printf("| Invalid choice. |\n");
