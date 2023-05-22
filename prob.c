@@ -242,7 +242,7 @@
                     break;
                     case 'e': printf("\n\n");
                 printf("+-----------------------------------------------------------+\n");
-                printf(" | Your answer is: %.2f Grams is equal to %.2f Tonns. \n", value, value / 1e+6);
+                printf(" | Your answer is: %.2f Grams is equal to %f Tonns. \n", value, value / 1e+6);
                 printf("+-----------------------------------------------------------+\n");
                     break;
 
@@ -904,7 +904,6 @@
 
         
     }
-//проверка
 
 
 
