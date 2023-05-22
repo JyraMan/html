@@ -21,7 +21,7 @@
         case 'c':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f centimeters is equal to %.2le kilometers. ", value, value / 100000);
+        printf("| Your answer is: %.2f centimeters is equal to %.2le kilometers.\n", value, value / 100000);
         printf("+-----------------------------------------------------------+\n");
         break;
         case 'd':
@@ -523,14 +523,30 @@
         char units[10];
         char choice;
 
-        printf("\n\n");
+        printf("\n\n\n");
 
-        printf("********************************\n");
-        printf("\n");
-        printf("*********UNIT_CONVENTER*********\n");
-        printf("\n");
-        printf("********************************\n");
-        printf("\n\n");
+const char* letters[] = {
+"##  ##  ##  ##  ######  ######",
+"##  ##  ### ##    ##      ##",
+"##  ##  ## ###    ##      ##",
+"##  ##  ##  ##    ##      ##",
+" ####   ##  ##  ######    ##",
+"                                                              \n"
+" ####    ####   ##  ##  ##  ##  #####   ##  ##  ######  #####   #####",
+"##  ##  ##  ##  ### ##  ##  ##  ##      ### ##    ##    ##      ##  ##",
+"##      ##  ##  ## ###  ##  ##  ####    #  ###    ##    ####    #####",
+"## #    ##  ##  ##  ##   ####   ##      ##  ##    ##    ##      ##  ##",
+" ####    ####   ##  ##    ##    #####   ##  ##    ##    #####   ##  ##"
+
+    };
+    int i;
+
+    for (i = 0; i < 10; i++) {
+        printf("%s\n", letters[i]);
+        
+    }
+    printf("\n\n\n");
+
 
         printf("+---------------------------+\n");
         printf("| Enter a value:|         ");
@@ -538,7 +554,7 @@
         printf("+---------------------------+\n");
         printf("\n\n");
         printf("+---------------------------+\n");
-        printf("| Enter a unit:|     ");
+        printf("| Enter a unit:|          ");
         scanf(" %s", units);
         printf("+---------------------------+\n");
         printf("\n\n");
