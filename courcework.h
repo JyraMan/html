@@ -1,8 +1,8 @@
 //инициализация наших реализованных функций
 #include <stdio.h>
-void convertSM(float value, char choise);
-void convertationM(float value, char choise);
-void convertMM(float value, char choice);
+int convertSM(float value, char choise);
+int convertationM(float value, char choise);
+int convertMM(float value, char choice);
 void convertC(float value, char choice);
 void convertK(float value, char choise);
 void convertF(float value, char choise);

@@ -1,62 +1,79 @@
 //реализация наших функций
 #include <stdio.h>
 #include "courcework.h"
+
+float result;
 	    // Функция для конвертации САНТИМЕТРОВ
-            void convertSM(float value, char choise) {
+            int convertSM(float value, char choise) {
                 switch (choise) {
         case 'a':
+        result = value / 100;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f centimeters is equal to %.2f meters. \n", value, value / 100);
+        printf("| Your answer is: %.2f centimeters is equal to %.2f meters. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
+
         case 'b':
+        result = value * 10;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f centimeters is equal to %.2f millimeters. \n", value, value * 10);
+        printf("| Your answer is: %.2f centimeters is equal to %.2f millimeters. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
+
         case 'c':
+        result = value / 100000;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f centimeters is equal to %.5f kilometers. \n", value, value / 100000);
+        printf("| Your answer is: %.2f centimeters is equal to %.5f kilometers. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
+
         case 'd':
+        result = value / 10;
 	printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f centimeters is equal to %.2f decimeter. \n", value, value / 10);
+        printf("| Your answer is: %.2f centimeters is equal to %.2f decimeter. \n", value,result);
 	printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
+
 	default:
         printf("| Invalid choice. |\n");
         break;
 	    }
 	    }
 	    // Функция для конвертации МЕТРОВ
-            void convertationM(float value, char choise) {
+            int convertationM(float value, char choise) {
                 switch(choise) {
         case 'a':
+        result = value * 100;
         printf("\n\n");
 	printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f meters is equal to %.2f centimeters. \n", value, value * 100);
+        printf("| Your answer is: %.2f meters is equal to %.2f centimeters. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
+
 	case 'b':
+        result = value / 1000;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f meters is equal to %.3f kilometers. \n", value, value / 1000);
+        printf("| Your answer is: %.2f meters is equal to %.3f kilometers. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
+
         case 'c':
+        result = value / 1069;
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f meters is equal to %.5f miles. \n", value, value / 1069);
+        printf("| Your answer is: %.2f meters is equal to %.5f miles. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
+
         case 'd':
+        result = value * 3.281;
         printf("+-----------------------------------------------------------+\n");
-        printf("| Your answer is: %.2f meters is equal to %.2f foot. \n", value, value * 3.281);
+        printf("| Your answer is: %.2f meters is equal to %.2f foot. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
 
 	default:
 	printf("| Invalid choice. |\n");
@@ -64,32 +81,36 @@
 	    }
             }
 	    //функция для конвертации МИЛЛИМЕТРОВ
-            void convertMM(float value, char choice) {
+            int convertMM(float value, char choice) {
                 switch(choice) {
         case 'a':
+        result = value / 10;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Centimeters. \n", value, value / 10);
+        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Centimeters. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'b':
+        result = value / 1000;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Meters. \n", value, value / 1000);
+        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Meters. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'c':
+        result = value * 1e+6;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Kilometers. \n", value, value * 1e+6);
+        printf(" | Your answer is: %.2f Millimeters is equal to %.2f Kilometers. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'd':
+        result = value / 304.8;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Millimeters is equal to %.5f Pouns. \n", value, value / 304.8);
+        printf(" | Your answer is: %.2f Millimeters is equal to %.5f Pouns. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
 
 
         default:
@@ -98,20 +119,22 @@
             }
             }
 	    //функция для конвертации ЦЕЛЬСИЯ
-            void convertC(float value, char choice) {
+            int convertC(float value, char choice) {
                 switch (choice) {
         case 'a':
+        result = (value * 9 / 5) + 32;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Celsius is equal to %.2f Fahrenheit. \n", value, (value * 9 / 5) + 32);
+        printf(" | Your answer is: %.2f Celsius is equal to %.2f Fahrenheit. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'b':
+        result = value + 273;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Celsius is equal to %.2f Kelvins. \n", value, value + 273);
+        printf(" | Your answer is: %.2f Celsius is equal to %.2f Kelvins. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
 
         default:
         printf("| Invalid choice. |\n");
@@ -119,20 +142,22 @@
             }
             }
             //функция для конвертации КЕЛЬВИНЫ
-            void convertK(float value, char choise) {
+            int convertK(float value, char choise) {
                 switch (choise) {
         case 'a':
+        result =  1.8 * (value - 273) + 32;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f kelvin is equal to %.2f Fahrenheit. \n", value, 1.8 * (value - 273) + 32);
+        printf(" | Your answer is: %.2f kelvin is equal to %.2f Fahrenheit. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'b':
+        result = value - 273;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f kelvin is equal to %.2f Celsius. \n", value,  value - 273);
+        printf(" | Your answer is: %.2f kelvin is equal to %.2f Celsius. \n", value,  result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
 
         default:
         printf("| Invalid choice. |\n");
@@ -141,19 +166,21 @@
             }
 
 	    //функция для ФАРЕНГЕЙТ
-            void convertF(float value, char choise) {
+            int convertF(float value, char choise) {
                 switch (choise) {
         case 'a':
+        result = (5.0/9.0) * (value - 32) + 273.15;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Fahrenheit is equal to %.2f Kelvin. \n", value, (5.0/9.0) * (value - 32) + 273.15);
+        printf(" | Your answer is: %.2f Fahrenheit is equal to %.2f Kelvin. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'b':
+        result = (value - 32) * (5.0/9.0);
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Fahrenheit is equal to %.2f Celsius. \n", value, (value - 32) * (5.0/9.0));
+        printf(" | Your answer is: %.2f Fahrenheit is equal to %.2f Celsius. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
 
 
         default:
@@ -162,31 +189,36 @@
             }
             }
             //функция для КИЛОГРАММОВ
-	    void convertKG(float value, char choise) {
+	    int convertKG(float value, char choise) {
                 switch (choise) {
         case 'a':
+        result = value * 1000;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Kilograms is equal to %.2f Grams. \n", value, value * 1000);
+        printf(" | Your answer is: %.2f Kilograms is equal to %.2f Grams. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'b':
+        result = value * 2.205;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Kilograms is equal to %.2f Pounds. \n", value, value * 2.205);
+        printf(" | Your answer is: %.2f Kilograms is equal to %.2f Pounds. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'c':
+        result = value * 1e+6;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Kilograms is equal to %.2f Miligrams. \n", value, value * 1e+6);
+        printf(" | Your answer is: %.2f Kilograms is equal to %.2f Miligrams. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
-        case 'd': printf("\n\n");
+        return result;
+        case 'd':
+        result = value * 5000;
+        printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Kilograms is equal to %.2f Carrats. \n", value, value * 5000);
+        printf(" | Your answer is: %.2f Kilograms is equal to %.2f Carrats. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
 
         default:
         printf("| Invalid choice. |\n");
@@ -194,20 +226,22 @@
             }
             }
 	    //функция для ГРАММОВ
-            void convertGR(float value, char choice) {
+            int convertGR(float value, char choice) {
                 switch(choice) {
         case 'a':
+        result = value / 1000;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Grams is equal to %.3f Kilograms. \n", value, value / 1000);
+        printf(" | Your answer is: %.2f Grams is equal to %.3f Kilograms. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'b':
+        result = value * 1000;
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
-        printf(" | Your answer is: %.2f Grams is equal to %.2f Miligrams. \n", value, value * 1000);
+        printf(" | Your answer is: %.2f Grams is equal to %.2f Miligrams. \n", value, result);
         printf("+-----------------------------------------------------------+\n");
-        break;
+        return result;
         case 'c':
         printf("\n\n");
         printf("+-----------------------------------------------------------+\n");
