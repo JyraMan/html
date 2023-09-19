@@ -310,7 +310,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| a) |            | HW to GR  |\n");
             printf("+---------------------------+\n");
-            printf("| b) |            | HW to RG  |\n");
+            printf("| b) |            | HW to KG  |\n");
             printf("+---------------------------+\n");
             printf("| c) |            | HW to TN  |\n");
             printf("+---------------------------+\n");
