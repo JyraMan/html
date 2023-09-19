@@ -131,7 +131,7 @@ void test_convertM() {
     printf("+------------------------+\n");
 
 
-    case 'd'
+    case 'd':
     CTEST.value = 100.0;
     CTEST.choice= 'd';
     CTEST.expected = 328.08;
@@ -181,7 +181,7 @@ void test_convertK() {
     printf("+------------------------+\n");
 
 
-    case 'a'
+    case 'a':
     CTEST.value = 274.0;
     CTEST.expected = 39.8;
     CTEST.result = convertationK(CTEST.value, CTEST.choice);
@@ -230,7 +230,7 @@ void test_convertGR() {
     printf("+------------------------+\n");
 
 
-    case 'b'
+    case 'b':
     CTEST.value = 100.0;
     CTEST.choice= 'b';
     CTEST.expected = 100000.0;
@@ -449,7 +449,7 @@ void test_convertMIN() {
     printf("+------------------------+\n");
 
 
-    case 'd'
+    case 'd':
     CTEST.value = 100.0;
     CTEST.expected = 0.0023;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
@@ -568,7 +568,7 @@ void test_convertDAYS() {
     printf("+------------------------+\n");
 
 
-    case 'e'
+    case 'e':
     CTEST.value = 100.0;
     CTEST.expected = 0.27;
     CTEST.result = convertationDAYS(CTEST.value, CTEST.choice);
