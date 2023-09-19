@@ -45,7 +45,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertMM(CTEST.coice);
+            test_convertMM(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -71,7 +71,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertCM(CTEST.coice);
+            test_convertCM(CTEST.choice);
             printf("+---------------------------+\n");
             printf("\n\n");
             isValidUnit = 1;
@@ -95,7 +95,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertM(CTEST.coice);
+            test_convertM(CTEST.choice);
             printf("+---------------------------+\n");
             printf("\n\n");
             isValidUnit = 1;
@@ -113,7 +113,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertC(CTEST.coice);
+            test_convertC(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -130,7 +130,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertK(CTEST.coice);
+            test_convertK(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -147,7 +147,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertF(CTEST.coice);
+            test_convertF(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -170,7 +170,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertGR(CTEST.coice);
+            test_convertGR(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -192,7 +192,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertKG(CTEST.coice);
+            test_convertKG(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -213,7 +213,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertHW(CTEST.coice);
+            test_convertHW(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -236,7 +236,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertSEC(CTEST.coice);
+            test_convertSEC(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -259,7 +259,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertMIN(CTEST.coice);
+            test_convertMIN(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -282,7 +282,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertHOUR(CTEST.coice);
+            test_convertHOUR(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -305,7 +305,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertDAY(CTEST.coice);
+            test_convertDAY(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -328,7 +328,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertMONTH(CTEST.coice);
+            test_convertMONTH(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
@@ -351,7 +351,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertYEAR(CTEST.coice);
+            test_convertYEAR(CTEST.choice);
             printf("+---------------------------+\n");
             isValidUnit = 1;
         }
