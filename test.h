@@ -278,7 +278,7 @@ void test_convertKR() {
     case 'a':
     CTEST.value = 100.0;
     CTEST.expected = 100000.0;
-    CTEST.result = convertKR(CTEST.value, CTEST.choice);
+    CTEST.result = convertKG(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
@@ -289,7 +289,7 @@ void test_convertKR() {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
     CTEST.expected = 220.5;
-    CTEST.result = convertKR(CTEST.value, CTEST.choice);
+    CTEST.result = convertKG(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
@@ -299,7 +299,7 @@ void test_convertKR() {
     case 'c':
     CTEST.value = 100.0;
     CTEST.expected = 100000000.0;
-    CTEST.result = convertKR(CTEST.value, CTEST.choice);
+    CTEST.result = convertKG(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
@@ -310,7 +310,7 @@ void test_convertKR() {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
     CTEST.expected = 500000.0;
-    CTEST.result = convertKR(CTEST.value, CTEST.choice);
+    CTEST.result = convertKG(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
@@ -524,13 +524,13 @@ void test_convertHOUR() {
     }
 }
 
-void test_convertDAYS() {
+void test_convertDAY() {
     switch(CTEST.choice) {
 
     case 'a':
     CTEST.value = 100.0;
     CTEST.expected = 8640000.0;
-    CTEST.result = convertDAYS(CTEST.value, CTEST.choice);
+    CTEST.result = convertDAY(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
@@ -540,7 +540,7 @@ void test_convertDAYS() {
     case 'b':
     CTEST.value = 100.0;
     CTEST.expected = 144000.0;
-    CTEST.result = convertDAYS(CTEST.value, CTEST.choice);
+    CTEST.result = convertDAY(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
@@ -550,7 +550,7 @@ void test_convertDAYS() {
     case 'c':
     CTEST.value = 100.0;
     CTEST.expected = 2400.0;
-    CTEST.result = convertDAYS(CTEST.value, CTEST.choice);
+    CTEST.result = convertDAY(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
@@ -561,7 +561,7 @@ void test_convertDAYS() {
     CTEST.value = 100;
     CTEST.choice= 'd';
     CTEST.expected = 3.28;
-    CTEST.result = convertDAYS(CTEST.value, CTEST.choice);
+    CTEST.result = convertDAY(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
@@ -571,7 +571,7 @@ void test_convertDAYS() {
     case 'e':
     CTEST.value = 100.0;
     CTEST.expected = 0.27;
-    CTEST.result = convertDAYS(CTEST.value, CTEST.choice);
+    CTEST.result = convertDAY(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");

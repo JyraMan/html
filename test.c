@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "test.h"
 #include <string.h>
+#include <ctype.h>
 
 int main()
 {
     char units[10];
-    
     printf("+---------------------------+\n");
     printf("| Enter a unit:|          ");
     scanf(" %s", units);
@@ -71,7 +71,7 @@ int main()
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
             scanf(" %c", &CTEST.choice);
-            test_convertCM(CTEST.choice);
+            test_convertSM(CTEST.choice);
             printf("+---------------------------+\n");
             printf("\n\n");
             isValidUnit = 1;
