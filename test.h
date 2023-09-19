@@ -21,7 +21,7 @@ void test_convertMM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -31,7 +31,7 @@ void test_convertMM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -41,7 +41,7 @@ void test_convertMM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -51,6 +51,11 @@ void test_convertMM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -65,7 +70,7 @@ void test_convertSM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -75,7 +80,7 @@ void test_convertSM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -85,7 +90,7 @@ void test_convertSM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -95,6 +100,11 @@ void test_convertSM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -109,7 +119,7 @@ void test_convertM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -119,7 +129,7 @@ void test_convertM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -129,7 +139,7 @@ void test_convertM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -140,6 +150,11 @@ void test_convertM() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -154,7 +169,7 @@ void test_convertC() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -165,6 +180,11 @@ void test_convertC() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -179,7 +199,7 @@ void test_convertK() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'a':
     CTEST.value = 274.0;
@@ -189,6 +209,11 @@ void test_convertK() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -203,7 +228,7 @@ void test_convertF() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 33.0;
@@ -214,6 +239,11 @@ void test_convertF() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -228,7 +258,7 @@ void test_convertGR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -239,7 +269,7 @@ void test_convertGR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -249,7 +279,7 @@ void test_convertGR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -259,7 +289,7 @@ void test_convertGR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'e':
     CTEST.value = 100.0;
@@ -269,6 +299,11 @@ void test_convertGR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -283,7 +318,7 @@ void test_convertKG() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -294,7 +329,7 @@ void test_convertKG() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -304,7 +339,7 @@ void test_convertKG() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -315,6 +350,11 @@ void test_convertKG() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -329,7 +369,7 @@ void test_convertHW() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -339,7 +379,7 @@ void test_convertHW() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -349,7 +389,7 @@ void test_convertHW() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -359,6 +399,11 @@ void test_convertHW() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -373,7 +418,7 @@ void test_convertSEC() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -383,7 +428,7 @@ void test_convertSEC() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -393,7 +438,7 @@ void test_convertSEC() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -403,7 +448,7 @@ void test_convertSEC() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'e':
     CTEST.value = 100.0;
@@ -413,6 +458,11 @@ void test_convertSEC() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -427,7 +477,7 @@ void test_convertMIN() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -437,7 +487,7 @@ void test_convertMIN() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -447,7 +497,7 @@ void test_convertMIN() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -457,7 +507,7 @@ void test_convertMIN() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'e':
     CTEST.value = 100.0;
@@ -467,6 +517,11 @@ void test_convertMIN() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -481,7 +536,7 @@ void test_convertHOUR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -491,7 +546,7 @@ void test_convertHOUR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -501,7 +556,7 @@ void test_convertHOUR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100.0;
@@ -511,7 +566,7 @@ void test_convertHOUR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'e':
     CTEST.value = 100.0;
@@ -521,6 +576,11 @@ void test_convertHOUR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -535,7 +595,7 @@ void test_convertDAY() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 100.0;
@@ -545,7 +605,7 @@ void test_convertDAY() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 100.0;
@@ -555,7 +615,7 @@ void test_convertDAY() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 100;
@@ -566,7 +626,7 @@ void test_convertDAY() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'e':
     CTEST.value = 100.0;
@@ -576,6 +636,11 @@ void test_convertDAY() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -590,7 +655,7 @@ void test_convertMONTH() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 1.0;
@@ -600,7 +665,7 @@ void test_convertMONTH() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 1.0;
@@ -610,7 +675,7 @@ void test_convertMONTH() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 1.0;
@@ -620,7 +685,7 @@ void test_convertMONTH() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'e':
     CTEST.value = 1.0;
@@ -630,6 +695,11 @@ void test_convertMONTH() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
 
@@ -644,7 +714,7 @@ void test_convertYEAR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'b':
     CTEST.value = 1.0;
@@ -654,7 +724,7 @@ void test_convertYEAR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'c':
     CTEST.value = 1.0;
@@ -664,7 +734,7 @@ void test_convertYEAR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'd':
     CTEST.value = 1.0;
@@ -674,7 +744,7 @@ void test_convertYEAR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-
+    break;
 
     case 'e':
     CTEST.value = 1.0;
@@ -684,5 +754,10 @@ void test_convertYEAR() {
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    break;
+
+    default:
+    printf("| Invalid choice. |\n");
+    break;
     }
 }
