@@ -12,5 +12,10 @@ int main()
     test_convertGR();
     test_convertKR();
     test_convertHW();
+    test_convertSEC();
+    test_convertMIN();
+    test_convertHOUR();
+    test_convertMONTH();
+    test_convertYEAR();
     return 0;
 }
