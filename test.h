@@ -10,7 +10,7 @@ struct test
 }CTEST;
 
 
-void test_convertMM() {
+void test_convertMMA() {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
     CTEST.expected = 10.0;
@@ -21,7 +21,7 @@ void test_convertMM() {
     printf("+------------------------+\n");
 }
 
-void test_convertMM() {
+void test_convertMMB() {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
     CTEST.expected = 0.1;
@@ -32,7 +32,7 @@ void test_convertMM() {
     printf("+------------------------+\n");
 }
 
-void test_convertMM() {
+void test_convertMMC() {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
     CTEST.expected = 0.0001;
@@ -43,7 +43,18 @@ void test_convertMM() {
     printf("+------------------------+\n");
 }
 
-void test_convertSM()
+void test_convertMMC() {
+    CTEST.value = 100.0;
+    CTEST.choice= 'd';
+    CTEST.expected = 0.32;
+    CTEST.result = convertMM(CTEST.value, CTEST.choice);
+    assert(CTEST.result==CTEST.expected);
+    printf("+------------------------+\n");
+    printf("|test passed successfully|\n");
+    printf("+------------------------+\n");
+}
+
+void test_convertSMA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -55,7 +66,7 @@ void test_convertSM()
     printf("+------------------------+\n");
 }
 
-void test_convertSM()
+void test_convertSMB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -67,7 +78,7 @@ void test_convertSM()
     printf("+------------------------+\n");
 }
 
-void test_convertSM()
+void test_convertSMC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -79,7 +90,7 @@ void test_convertSM()
     printf("+------------------------+\n");
 }
 
-void test_convertSM()
+void test_convertSMD()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
@@ -91,7 +102,7 @@ void test_convertSM()
     printf("+------------------------+\n");
 }
 
-void test_convertM()
+void test_convertMA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -103,7 +114,7 @@ void test_convertM()
     printf("+------------------------+\n");
 }
 
-void test_convertM()
+void test_convertMB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -115,7 +126,7 @@ void test_convertM()
     printf("+------------------------+\n");
 }
 
-void test_convertM()
+void test_convertMC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -127,7 +138,7 @@ void test_convertM()
     printf("+------------------------+\n");
 }
 
-void test_convertM()
+void test_convertMD()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
@@ -139,7 +150,7 @@ void test_convertM()
     printf("+------------------------+\n");
 }
 
-void test_convertC()
+void test_convertCA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -151,7 +162,7 @@ void test_convertC()
     printf("+------------------------+\n");
 }
 
-void test_convertC()
+void test_convertCB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -163,7 +174,7 @@ void test_convertC()
     printf("+------------------------+\n");
 }
 
-void test_convertK()
+void test_convertKA()
 {
     CTEST.value = 274.0;
     CTEST.choice= 'b';
@@ -175,7 +186,7 @@ void test_convertK()
     printf("+------------------------+\n");
 }
 
-void test_convertK()
+void test_convertKB()
 {
     CTEST.value = 274.0;
     CTEST.choice= 'a';
@@ -187,7 +198,7 @@ void test_convertK()
     printf("+------------------------+\n");
 }
 
-void test_convertF()
+void test_convertFA()
 {
     CTEST.value = 33.0;
     CTEST.choice= 'a';
@@ -199,7 +210,7 @@ void test_convertF()
     printf("+------------------------+\n");
 }
 
-void test_convertF()
+void test_convertFB()
 {
     CTEST.value = 33.0;
     CTEST.choice= 'b';
@@ -211,7 +222,7 @@ void test_convertF()
     printf("+------------------------+\n");
 }
 
-void test_convertGR()
+void test_convertGRA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -223,7 +234,7 @@ void test_convertGR()
     printf("+------------------------+\n");
 }
 
-void test_convertGR()
+void test_convertGRB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -235,7 +246,7 @@ void test_convertGR()
     printf("+------------------------+\n");
 }
 
-void test_convertGR()
+void test_convertGRC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -247,7 +258,7 @@ void test_convertGR()
     printf("+------------------------+\n");
 }
 
-void test_convertGR()
+void test_convertGRD()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
@@ -259,7 +270,7 @@ void test_convertGR()
     printf("+------------------------+\n");
 }
 
-void test_convertGR()
+void test_convertGRE()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'e';
@@ -271,7 +282,7 @@ void test_convertGR()
     printf("+------------------------+\n");
 }
 
-void test_convertKR()
+void test_convertKRA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -283,7 +294,7 @@ void test_convertKR()
     printf("+------------------------+\n");
 }
 
-void test_convertKR()
+void test_convertKRB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -295,7 +306,7 @@ void test_convertKR()
     printf("+------------------------+\n");
 }
 
-void test_convertKR()
+void test_convertKRC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -307,7 +318,7 @@ void test_convertKR()
     printf("+------------------------+\n");
 }
 
-void test_convertKR()
+void test_convertKRD()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
@@ -319,19 +330,7 @@ void test_convertKR()
     printf("+------------------------+\n");
 }
 
-void test_convertKR()
-{
-    CTEST.value = 100.0;
-    CTEST.choice= 'e';
-    CTEST.expected = 0.1;
-    CTEST.result = convertationKR(CTEST.value, CTEST.choice);
-    assert(CTEST.result==CTEST.expected);
-    printf("+------------------------+\n");
-    printf("|test passed successfully|\n");
-    printf("+------------------------+\n");
-}
-
-void test_convertHW()
+void test_convertHWA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -343,7 +342,7 @@ void test_convertHW()
     printf("+------------------------+\n");
 }
 
-void test_convertHW()
+void test_convertHWB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -355,7 +354,7 @@ void test_convertHW()
     printf("+------------------------+\n");
 }
 
-void test_convertHW()
+void test_convertHWC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -367,7 +366,7 @@ void test_convertHW()
     printf("+------------------------+\n");
 }
 
-void test_convertHW()
+void test_convertHWD()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
@@ -379,7 +378,7 @@ void test_convertHW()
     printf("+------------------------+\n");
 }
 
-void test_convertSEC()
+void test_convertSECA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -391,7 +390,7 @@ void test_convertSEC()
     printf("+------------------------+\n");
 }
 
-void test_convertSEC()
+void test_convertSECB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -403,7 +402,7 @@ void test_convertSEC()
     printf("+------------------------+\n");
 }
 
-void test_convertSEC()
+void test_convertSECC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -415,7 +414,7 @@ void test_convertSEC()
     printf("+------------------------+\n");
 }
 
-void test_convertSEC()
+void test_convertSECD()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
@@ -427,7 +426,7 @@ void test_convertSEC()
     printf("+------------------------+\n");
 }
 
-void test_convertSEC()
+void test_convertSECE()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'e';
@@ -439,7 +438,7 @@ void test_convertSEC()
     printf("+------------------------+\n");
 }
 
-void test_convertMIN()
+void test_convertMINA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -451,7 +450,7 @@ void test_convertMIN()
     printf("+------------------------+\n");
 }
 
-void test_convertMIN()
+void test_convertMINB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -463,7 +462,7 @@ void test_convertMIN()
     printf("+------------------------+\n");
 }
 
-void test_convertMIN()
+void test_convertMINC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -475,7 +474,7 @@ void test_convertMIN()
     printf("+------------------------+\n");
 }
 
-void test_convertMIN()
+void test_convertMIND()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
@@ -487,7 +486,7 @@ void test_convertMIN()
     printf("+------------------------+\n");
 }
 
-void test_convertMIN()
+void test_convertMINE()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'e';
@@ -499,7 +498,7 @@ void test_convertMIN()
     printf("+------------------------+\n");
 }
 
-void test_convertHOUR()
+void test_convertHOURA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -511,7 +510,7 @@ void test_convertHOUR()
     printf("+------------------------+\n");
 }
 
-void test_convertHOUR()
+void test_convertHOURB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -523,7 +522,7 @@ void test_convertHOUR()
     printf("+------------------------+\n");
 }
 
-void test_convertHOUR()
+void test_convertHOURC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -535,7 +534,7 @@ void test_convertHOUR()
     printf("+------------------------+\n");
 }
 
-void test_convertHOUR()
+void test_convertHOURDD()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'd';
@@ -547,7 +546,7 @@ void test_convertHOUR()
     printf("+------------------------+\n");
 }
 
-void test_convertHOUR()
+void test_convertHOURE()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'e';
@@ -559,7 +558,7 @@ void test_convertHOUR()
     printf("+------------------------+\n");
 }
 
-void test_convertDAYS()
+void test_convertDAYSA()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'a';
@@ -571,7 +570,7 @@ void test_convertDAYS()
     printf("+------------------------+\n");
 }
 
-void test_convertDAYS()
+void test_convertDAYSB()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'b';
@@ -583,7 +582,7 @@ void test_convertDAYS()
     printf("+------------------------+\n");
 }
 
-void test_convertDAYS()
+void test_convertDAYSC()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'c';
@@ -595,7 +594,7 @@ void test_convertDAYS()
     printf("+------------------------+\n");
 }
 
-void test_convertDAYS()
+void test_convertDAYSD()
 {
     CTEST.value = 100;
     CTEST.choice= 'd';
@@ -607,7 +606,7 @@ void test_convertDAYS()
     printf("+------------------------+\n");
 }
 
-void test_convertDAYS()
+void test_convertDAYSE()
 {
     CTEST.value = 100.0;
     CTEST.choice= 'e';
@@ -619,7 +618,7 @@ void test_convertDAYS()
     printf("+------------------------+\n");
 }
 
-void test_convertMONTH()
+void test_convertMONTHA()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'a';
@@ -631,7 +630,7 @@ void test_convertMONTH()
     printf("+------------------------+\n");
 }
 
-void test_convertMONTH()
+void test_convertMONTHB()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'b';
@@ -643,7 +642,7 @@ void test_convertMONTH()
     printf("+------------------------+\n");
 }
 
-void test_convertMONTH()
+void test_convertMONTHC()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'c';
@@ -655,7 +654,7 @@ void test_convertMONTH()
     printf("+------------------------+\n");
 }
 
-void test_convertMONTH()
+void test_convertMONTHD()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'd';
@@ -667,7 +666,7 @@ void test_convertMONTH()
     printf("+------------------------+\n");
 }
 
-void test_convertMONTH()
+void test_convertMONTHE()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'e';
@@ -679,7 +678,7 @@ void test_convertMONTH()
     printf("+------------------------+\n");
 }
 
-void test_convertYEAR()
+void test_convertYEARA()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'a';
@@ -691,7 +690,7 @@ void test_convertYEAR()
     printf("+------------------------+\n");
 }
 
-void test_convertYEAR()
+void test_convertYEARB()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'b';
@@ -703,7 +702,7 @@ void test_convertYEAR()
     printf("+------------------------+\n");
 }
 
-void test_convertYEAR()
+void test_convertYEARC()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'c';
@@ -715,7 +714,7 @@ void test_convertYEAR()
     printf("+------------------------+\n");
 }
 
-void test_convertYEAR()
+void test_convertYEARD()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'd';
@@ -727,7 +726,7 @@ void test_convertYEAR()
     printf("+------------------------+\n");
 }
 
-void test_convertYEAR()
+void test_convertYEARE()
 {
     CTEST.value = 1.0;
     CTEST.choice= 'a';
