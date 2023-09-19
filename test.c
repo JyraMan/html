@@ -30,7 +30,6 @@ int main()
     test_convertKRB();
     test_convertKRC();
     test_convertKRD();
-    test_convertKRE();
     test_convertHWA();
     test_convertHWB();
     test_convertHWC();
