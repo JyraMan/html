@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "test.h"
+#include <string.h>
 
 int main()
 {
     char units[10];
-    char CTEST.choice;
     
     printf("+---------------------------+\n");
     printf("| Enter a unit:|          ");
