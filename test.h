@@ -272,7 +272,7 @@ void test_convertGR() {
     }
 }
 
-void test_convertKR() {
+void test_convertKG() {
     switch(CTEST.choice) {
     
     case 'a':
