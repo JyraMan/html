@@ -10,136 +10,128 @@ struct test
 }CTEST;
 
 
-void test_convertMMA() {
+void test_convertMM() {
+    switch(CTEST.choice) {
+   
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 10.0;
     CTEST.result = convertMM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMMB() {
+
+    case 'b':
     CTEST.value = 100.0;
-    CTEST.choice= 'b';
     CTEST.expected = 0.1;
     CTEST.result = convertMM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMMC() {
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 0.0001;
     CTEST.result = convertMM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMMC() {
+
+    case 'd':
     CTEST.value = 100.0;
-    CTEST.choice= 'd';
     CTEST.expected = 0.32;
     CTEST.result = convertMM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertSMA()
-{
+void test_convertSM() {
+    switch(CTEST.choice) {
+
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 1.0;
     CTEST.result = convertSM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertSMB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
-    CTEST.choice= 'b';
     CTEST.expected = 1000.0;
     CTEST.result = convertSM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertSMC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 0.001;
     CTEST.result = convertSM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertSMD()
-{
+
+    case 'd':
     CTEST.value = 100.0;
-    CTEST.choice= 'd';
     CTEST.expected = 10.0;
     CTEST.result = convertSM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertMA()
-{
+void test_convertM() {
+    switch(CTEST.choice) {
+    
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 10000.0;
     CTEST.result = convertationM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
-    CTEST.choice= 'b';
     CTEST.expected = 0.1;
     CTEST.result = convertationM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 0.0621;
     CTEST.result = convertationM(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMD()
-{
+
+    case 'd'
     CTEST.value = 100.0;
     CTEST.choice= 'd';
     CTEST.expected = 328.08;
@@ -148,22 +140,23 @@ void test_convertMD()
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertCA()
-{
+void test_convertC() {
+    switch(CTEST.choice) {
+
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 212.0;
     CTEST.result = convertationC(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertCB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
     CTEST.choice= 'b';
     CTEST.expected = 373.0;
@@ -172,46 +165,47 @@ void test_convertCB()
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertKA()
-{
+void test_convertK() {
+    switch(CTEST.choice) {
+    
+    case 'b':
     CTEST.value = 274.0;
-    CTEST.choice= 'b';
     CTEST.expected = 1.0;
     CTEST.result = convertationK(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertKB()
-{
+
+    case 'a'
     CTEST.value = 274.0;
-    CTEST.choice= 'a';
     CTEST.expected = 39.8;
     CTEST.result = convertationK(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertFA()
-{
+void test_convertF() {
+    switch(CTEST.choice) {
+
+    case 'a':
     CTEST.value = 33.0;
-    CTEST.choice= 'a';
     CTEST.expected = 273.7;
     CTEST.result = convertationF(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertFB()
-{
+
+    case 'b':
     CTEST.value = 33.0;
     CTEST.choice= 'b';
     CTEST.expected = 0.55;
@@ -220,22 +214,23 @@ void test_convertFB()
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertGRA()
-{
+void test_convertGR() {
+    switch(CTEST.choice) {
+
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 0.1;
     CTEST.result = convertationGR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertGRB()
-{
+
+    case 'b'
     CTEST.value = 100.0;
     CTEST.choice= 'b';
     CTEST.expected = 100000.0;
@@ -244,58 +239,53 @@ void test_convertGRB()
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertGRC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 0.22;
     CTEST.result = convertationGR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertGRD()
-{
+
+    case 'd':
     CTEST.value = 100.0;
-    CTEST.choice= 'd';
     CTEST.expected = 500.0;
     CTEST.result = convertationGR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertGRE()
-{
+
+    case 'e':
     CTEST.value = 100.0;
-    CTEST.choice= 'e';
     CTEST.expected = 0.0001;
     CTEST.result = convertationGR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertKRA()
-{
+void test_convertKR() {
+    switch(CTEST.choice) {
+    
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 100000.0;
     CTEST.result = convertationKR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertKRB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
     CTEST.choice= 'b';
     CTEST.expected = 220.5;
@@ -304,22 +294,19 @@ void test_convertKRB()
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertKRC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 100000000.0;
     CTEST.result = convertationKR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertKRD()
-{
+
+    case 'd':
     CTEST.value = 100.0;
     CTEST.choice= 'd';
     CTEST.expected = 500000.0;
@@ -328,274 +315,249 @@ void test_convertKRD()
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertHWA()
-{
+void test_convertHW() {
+    switch(CTEST.choice) {
+
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 10000000.0;
     CTEST.result = convertationHW(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertHWB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
-    CTEST.choice= 'b';
     CTEST.expected = 10000.0;
     CTEST.result = convertationHW(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertHWC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 10.0;
     CTEST.result = convertationHW(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertHWD()
-{
+
+    case 'd':
     CTEST.value = 100.0;
-    CTEST.choice= 'd';
     CTEST.expected = 22050.0;
     CTEST.result = convertationHW(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertSECA()
-{
+void test_convertSEC() {
+    switch(CTEST.choice) {
+    
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 1.66;
     CTEST.result = convertationSEC(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertSECB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
-    CTEST.choice= 'b';
     CTEST.expected = 0.027;
     CTEST.result = convertationSEC(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertSECC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 0.001;
     CTEST.result = convertationSEC(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertSECD()
-{
+
+    case 'd':
     CTEST.value = 100.0;
-    CTEST.choice= 'd';
     CTEST.expected = 0.00003;
     CTEST.result = convertationSEC(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertSECE()
-{
+
+    case 'e':
     CTEST.value = 100.0;
-    CTEST.choice= 'e';
     CTEST.expected = 0.000003;
     CTEST.result = convertationSEC(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertMINA()
-{
+void test_convertMIN() {
+    switch(CTEST.choice) {
+    
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 6000.0;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMINB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
-    CTEST.choice= 'b';
     CTEST.expected = 1.66;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMINC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 0.0694;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMIND()
-{
+
+    case 'd'
     CTEST.value = 100.0;
-    CTEST.choice= 'd';
     CTEST.expected = 0.0023;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMINE()
-{
+
+    case 'e':
     CTEST.value = 100.0;
-    CTEST.choice= 'e';
     CTEST.expected = 0.00019;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertHOURA()
-{
+void test_convertHOUR() {
+    switch(CTEST.choice) {
+    
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 360000.0;
     CTEST.result = convertationHOUR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertHOURB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
-    CTEST.choice= 'b';
     CTEST.expected = 6000.0;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertHOURC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 4.16;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertHOURDD()
-{
+
+    case 'd':
     CTEST.value = 100.0;
-    CTEST.choice= 'd';
     CTEST.expected = 0.13;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertHOURE()
-{
+
+    case 'e':
     CTEST.value = 100.0;
-    CTEST.choice= 'e';
     CTEST.expected = 0.01;
     CTEST.result = convertationMIN(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertDAYSA()
-{
+void test_convertDAYS() {
+    switch(CTEST.choice) {
+
+    case 'a':
     CTEST.value = 100.0;
-    CTEST.choice= 'a';
     CTEST.expected = 8640000.0;
     CTEST.result = convertationDAYS(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertDAYSB()
-{
+
+    case 'b':
     CTEST.value = 100.0;
-    CTEST.choice= 'b';
     CTEST.expected = 144000.0;
     CTEST.result = convertationDAYS(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertDAYSC()
-{
+
+    case 'c':
     CTEST.value = 100.0;
-    CTEST.choice= 'c';
     CTEST.expected = 2400.0;
     CTEST.result = convertationDAYS(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertDAYSD()
-{
+
+    case 'd':
     CTEST.value = 100;
     CTEST.choice= 'd';
     CTEST.expected = 3.28;
@@ -604,136 +566,123 @@ void test_convertDAYSD()
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertDAYSE()
-{
+
+    case 'e'
     CTEST.value = 100.0;
-    CTEST.choice= 'e';
     CTEST.expected = 0.27;
     CTEST.result = convertationDAYS(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertMONTHA()
-{
+void test_convertMONTH() {
+    switch(CTEST.choice) {
+
+    case 'a':
     CTEST.value = 1.0;
-    CTEST.choice= 'a';
     CTEST.expected = 2628000.0;
     CTEST.result = convertationMONTH(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMONTHB()
-{
+
+    case 'b':
     CTEST.value = 1.0;
-    CTEST.choice= 'b';
     CTEST.expected = 43800.0;
     CTEST.result = convertationMONTH(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMONTHC()
-{
+
+    case 'c':
     CTEST.value = 1.0;
-    CTEST.choice= 'c';
     CTEST.expected = 730.0;
     CTEST.result = convertationMONTH(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMONTHD()
-{
+
+    case 'd':
     CTEST.value = 1.0;
-    CTEST.choice= 'd';
     CTEST.expected = 30.417;
     CTEST.result = convertationMONTH(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertMONTHE()
-{
+
+    case 'e':
     CTEST.value = 1.0;
-    CTEST.choice= 'e';
     CTEST.expected = 0.083;
     CTEST.result = convertationMONTH(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
 
-void test_convertYEARA()
-{
+void test_convertYEAR() {
+    switch(CTEST.choice) {
+
+    case 'a':
     CTEST.value = 1.0;
-    CTEST.choice= 'a';
     CTEST.expected = 31540000.0;
     CTEST.result = convertationYEAR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertYEARB()
-{
+
+    case 'b':
     CTEST.value = 1.0;
-    CTEST.choice= 'b';
     CTEST.expected = 525600.0;
     CTEST.result = convertationYEAR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertYEARC()
-{
+
+    case 'c':
     CTEST.value = 1.0;
-    CTEST.choice= 'c';
     CTEST.expected = 8760.0;
     CTEST.result = convertationYEAR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertYEARD()
-{
+
+    case 'd':
     CTEST.value = 1.0;
-    CTEST.choice= 'd';
     CTEST.expected = 365.0;
     CTEST.result = convertationYEAR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
-}
 
-void test_convertYEARE()
-{
+
+    case 'e':
     CTEST.value = 1.0;
-    CTEST.choice= 'a';
     CTEST.expected = 12.0;
     CTEST.result = convertationYEAR(CTEST.value, CTEST.choice);
     assert(CTEST.result==CTEST.expected);
     printf("+------------------------+\n");
     printf("|test passed successfully|\n");
     printf("+------------------------+\n");
+    }
 }
