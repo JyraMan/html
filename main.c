@@ -29,8 +29,13 @@ int main()
 
     for (i = 0; i < 10; i++)
     {
+        printf("\033[0;35;1m");
         printf("%s\n", letters[i]);
+        printf("\033[0m");
     }
+
+    printf("\033[0;37;1m"); // установка цвета (белый)
+
     printf("\n\n\n");
     printf("-------------|-------------|-----------------|------------|------------|\n");
     printf("|-------------|------------|  CONVERSION IN  |------------|------------|\n");
@@ -103,11 +108,14 @@ int main()
 
     if (value != (int)value)
     {
+        printf("\033[0;31m"); // установка красного цвета
         printf("+--------------------------------+\n");
         printf("|input error: not a numeric value|\n");
         printf("+--------------------------------+\n");
+        printf("\033[0m"); // убираем
         return 0;
     }
+    printf("\033[0;37;1m"); // установка цвета (белый)
 
     printf("+---------------------------+\n");
     printf("| Enter a unit:|          ");
@@ -120,13 +128,16 @@ int main()
     {
         if (isdigit(units[P]))
         {
+            printf("\033[0;31m"); // установка красного цвета
             printf("+------------------------------------+\n");
             printf("|input error: incorrect value entered|\n");
             printf("+------------------------------------+\n");
+            printf("\033[0m"); // убираем
             return 1;
         }
         P++;
     }
+    printf("\033[0;37;1m"); // установка цвета (белый)
 
     int isValidUnit = 0;
     while (!isValidUnit)
@@ -268,7 +279,6 @@ int main()
             printf("+---------------------------+\n");
             printf("| d) |            | KG to CR  |\n");
             printf("+---------------------------+\n");
-           
 
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
@@ -471,6 +481,6 @@ int main()
             isValidUnit = 1;
         }
     }
-
+    printf("\033[0m");
     return 0;
 }
