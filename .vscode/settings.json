@@ -12,9 +12,10 @@
     "-Wpedantic",
     "-Wshadow",
     "-Wformat=2",
+    "-Wcast-align",
     "-Wconversion",
-    "-Wnull-dereference",
-    "-Wsign-conversion"
+    "-Wsign-conversion",
+    "-Wnull-dereference"
   ],
   "C_Cpp_Runner.enableWarnings": true,
   "C_Cpp_Runner.warningsAsError": false,
@@ -57,5 +58,6 @@
   "files.associations": {
     "type_traits": "c",
     "test.h": "c"
-  }
+  },
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }

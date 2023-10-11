@@ -10,37 +10,22 @@ int convertSM(float value, char choise)
         {
         case 'a':
                 result = value / 100;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f centimeters is equal to %.2f meters. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         case 'b':
                 result = value * 10;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f centimeters is equal to %.2f millimeters. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         case 'c':
                 result = value / 100000;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f centimeters is equal to %.5f kilometers. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         case 'd':
                 result = value / 10;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f centimeters is equal to %.2f decimeter. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
+
                 break;
         }
 }
@@ -51,36 +36,21 @@ int convertationM(float value, char choise)
         {
         case 'a':
                 result = value * 100;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f meters is equal to %.2f centimeters. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         case 'b':
                 result = value / 1000;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f meters is equal to %.3f kilometers. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         case 'c':
                 result = value / 1069;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f meters is equal to %.5f miles. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         case 'd':
                 result = value * 3.281;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f meters is equal to %.2f foot. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
                 break;
         }
 }
@@ -91,35 +61,18 @@ int convertMM(float value, char choice)
         {
         case 'a':
                 result = value / 10;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Millimeters is equal to %.2f Centimeters. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'b':
                 result = value / 1000;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Millimeters is equal to %.2f Meters. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'c':
                 result = value * 1e+6;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Millimeters is equal to %.2f Kilometers. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'd':
                 result = value / 304.8;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Millimeters is equal to %.5f Pouns. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
                 break;
         }
 }
@@ -130,21 +83,12 @@ int convertC(float value, char choice)
         {
         case 'a':
                 result = (value * 9 / 5) + 32;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Celsius is equal to %.2f Fahrenheit. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'b':
                 result = value + 273;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Celsius is equal to %.2f Kelvins. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
                 break;
         }
 }
@@ -155,21 +99,12 @@ int convertK(float value, char choise)
         {
         case 'a':
                 result = 1.8 * (value - 273) + 32;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f kelvin is equal to %.2f Fahrenheit. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'b':
                 result = value - 273;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f kelvin is equal to %.2f Celsius. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
                 break;
         }
 }
@@ -181,20 +116,12 @@ int convertF(float value, char choise)
         {
         case 'a':
                 result = (5.0 / 9.0) * (value - 32) + 273.15;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Fahrenheit is equal to %.2f Kelvin. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'b':
                 result = (value - 32) * (5.0 / 9.0);
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Fahrenheit is equal to %.2f Celsius. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
                 break;
         }
 }
