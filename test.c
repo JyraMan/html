@@ -11,7 +11,7 @@ int main()
     scanf(" %s", units);
     printf("+---------------------------+\n");
     printf("\n\n");
-    
+
     int P = 0;
     while (units[P] != '\0')
     {
@@ -24,12 +24,12 @@ int main()
         }
         P++;
     }
-    
-     int isValidUnit = 0;
+
+    int isValidUnit = 0;
     while (!isValidUnit)
     {
-    
-    if (strcmp(units, "mm") == 0)
+
+        if (strcmp(units, "mm") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -49,9 +49,8 @@ int main()
             test_convertMM(CTEST.choice);
             isValidUnit = 1;
         }
-    
 
-    else if (strcmp(units, "cm") == 0)
+        else if (strcmp(units, "cm") == 0)
         {
 
             printf("|    Choose conversion:     |\n");
@@ -77,7 +76,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "m") == 0)
+        else if (strcmp(units, "m") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -101,7 +100,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "c") == 0)
+        else if (strcmp(units, "c") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -118,7 +117,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "k") == 0)
+        else if (strcmp(units, "k") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -135,7 +134,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "f") == 0)
+        else if (strcmp(units, "f") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -152,7 +151,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "gr") == 0)
+        else if (strcmp(units, "gr") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -175,7 +174,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "kg") == 0)
+        else if (strcmp(units, "kg") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -187,7 +186,6 @@ int main()
             printf("+---------------------------+\n");
             printf("| d) |            | KG to CR  |\n");
             printf("+---------------------------+\n");
-           
 
             printf("+---------------------------+\n");
             printf("| Enter a choise:|         ");
@@ -197,7 +195,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "hw") == 0)
+        else if (strcmp(units, "hw") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -218,7 +216,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "sec") == 0)
+        else if (strcmp(units, "sec") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -241,7 +239,7 @@ int main()
             isValidUnit = 1;
         }
 
-     else if (strcmp(units, "min") == 0)
+        else if (strcmp(units, "min") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -264,7 +262,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "hour") == 0)
+        else if (strcmp(units, "hour") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -287,7 +285,7 @@ int main()
             isValidUnit = 1;
         }
 
-     else if (strcmp(units, "day") == 0)
+        else if (strcmp(units, "day") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -310,7 +308,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "month") == 0)
+        else if (strcmp(units, "month") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -333,7 +331,7 @@ int main()
             isValidUnit = 1;
         }
 
-    else if (strcmp(units, "year") == 0)
+        else if (strcmp(units, "year") == 0)
         {
             printf("|    Choose conversion:     |\n");
             printf("+---------------------------+\n");
@@ -355,7 +353,7 @@ int main()
             test_convertYEAR(CTEST.choice);
             isValidUnit = 1;
         }
-    else
+        else
         {
             printf("+---------------------------+\n");
             printf("|      Invalid category.    |\n");
