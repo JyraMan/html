@@ -1,4 +1,4 @@
-// инициализация наших реализованных функций
+//инициализация наших реализованных функций
 #include <stdio.h>
 int convertSM(float value, char choise);
 int convertationM(float value, char choise);

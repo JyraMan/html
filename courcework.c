@@ -394,42 +394,21 @@ int convertDAY(float value, char choice)
         {
         case 'a':
                 result = value * 86400;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Days is equal to %.2f Seconds. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'b':
                 result = value * 1440;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Days is equal to %.2f Minutes. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'c':
                 result = value * 24;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Days is equal to %.2f Hours. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'd':
                 result = value / 30.417;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Days is equal to %.3f Months. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'e':
                 result = value / 365;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Days is equal to %.4f Years. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
                 break;
         }
 }
@@ -440,38 +419,21 @@ int convertMONTH(float value, char choice)
         {
         case 'a':
                 result = value * 2.628e+6;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Months is equal to %.7f Seconds. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'b':
                 result = value * 43800;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Months is equal to %.6f Minutes. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'c':
                 result = value * 730;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Months is equal to %.4f Hours. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'd':
                 result = value * 30.417;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Months is equal to %.2f Days. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'e':
                 result = value / 12;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Months is equal to %.2f Years. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
                 break;
         }
 }
@@ -482,38 +444,21 @@ int convertYEAR(float value, char choice)
         {
         case 'a':
                 result = value * 3.154e+7;
-                printf("\n\n");
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Years is equal to %.8f Seconds. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'b':
                 result = value * 525600;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Years is equal to %.7f Minutes. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'c':
                 result = value * 8760;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Years is equal to %.4f Hours. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'd':
                 result = value * 365;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Years is equal to %.3f Days. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
         case 'e':
                 result = value * 12;
-                printf("+-----------------------------------------------------------+\n");
-                printf("| Your answer is: %.2f Years is equal to %.2f Months. \n", value, result);
-                printf("+-----------------------------------------------------------+\n");
                 return result;
 
         default:
-                printf("| Invalid choice. |\n");
                 break;
         }
 }
